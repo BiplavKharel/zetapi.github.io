@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;;
+}
+/* @font-face{
+  font-family: rubik;
+  src: url("CustomFont.eot");
+  src: url("CustomFont.woff") format("woff"),
+  url("CustomFont.otf") format("opentype"),
+  url("CustomFont.svg#filename") format("svg");
+} */
+
+
+.section1{
+  width: 1440px; 
+  height: 726.62px;
+  background-color: #09211D;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+/* nav img{
+  width: 50px;
+} */
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a{
+  color:#98E44E;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: "Rubik", "PT Sans", Calibri, Tahoma, sans-serif;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+.nav-links ul li::after{
+  content:'';
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nal-links ul li:hover::after{
+  width: 100%;
+}
+
+.text-box h1{
+  width: 1044px; 
+  height: 205px; 
+  left: 172px; 
+  top: 176px; 
+  position: absolute; 
+  color: #98E44E; 
+  font-size: 150px; 
+  font-family: Rubik; 
+  font-style: SemiBold 600;
+  font-weight: 600; 
+  word-wrap: break-word;
+}
+.text-box p{
+  width: 603px; 
+  height: 121px; 
+  left: 172px; 
+  top: 367px; 
+  position: absolute; 
+  color: #98E44E; 
+  font-size: 32px; 
+  font-family: "Signifika", "PT Sans", Calibri, Tahoma, sans-serif;;
+  font-weight: 400; 
+  word-wrap: break-word
+}
+.hero-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #2A441E;
+  background-color: #BEE498;
+  text-align: center;
+  width: 378px; 
+  height: 98px; 
+  left: 172px; 
+  top: 526px; 
+  font-size: 28px;
+  font-weight: 700;
+  font-family: Rubik;
+  word-wrap: break-word;
+  position: absolute;
+  cursor: pointer;
+  border-radius: 80px;
+}
+
+.hero-btn:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.section2{
+  width: 1440px;
+  height: 864.04px;
+  background-color: #BEE498;
+}
+.dialoguebox{
+  position: absolute;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+/* section 3 */
+.section3{
+  width: 1440px;
+  height: 879.86px;
+  background-color: #BEE498;
+}
+
+.heading{
+  width: 926px; 
+  height: 153px; 
+  color: #09211D;
+  font-size: 128px; 
+  font-family: Rubik; 
+  font-weight: 500; 
+  letter-spacing: 3.84px; 
+  word-wrap: break-word;
+  left: 2000px; 
+  top: 17.50px;
+}

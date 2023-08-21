@@ -1,64 +1,229 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">
-    <title>Zeta Pi Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Rubik:400,500,400italic,700' rel='stylesheet' type='text/css'>
-  </head>
-  <body>
-    <section class="section1">
-      <nav>
-        <a href="index.html"><img style="width: 91.71px; height: 80px" src="images/keycap-logo.png"></a>
-        <div class="nav-links" id="navLinks">
-          <i class="fa fa-times" onclick="hideMenu()"></i>
-          <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="eboard.html">e-board</a></li>
-            <li><a href="committee.html">committees</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">contact</a></li>
-            <li><a href="rush.html">rush</a></li>
-          </ul>
-        </div>
-        <div class="icons" id="socialMedia">
-          <img class="Li" style="width: 28px; height: 28px" src="images/ca01c0802e67a69d9adad4ede41e3d8d.png">
-          <img class="Li" style="width: 28px; height: 28px" src="images/insta.png">
-          <img class="Li" style="width: 28px; height: 28px" src="images/tiktok 1.png">
-        </div>
-      </nav>
-      <div class="text-box">
-        <h1>zeta pi</h1>
-        <p>We are a Co-Ed Professional Technology Fraternity established in 2023 at the University of Michigan.</p>
-        <button class="hero-btn">
-          Apply Fall 2023
-        </button>
-      </div>
-      <img style="width: 729px; height: 755.04px; left: 586px; top: 71px; position: absolute" src="images/computer.png">
-    </section>
 
-    <!-- section2 -->
-    <section class="section2">
-      <div class="dialoguebox">
-        <img class="diag" style="width: 1030px; height: 653px; left: 205px; top: 110.38px; position: absolute" src="images/dialoguebox.png">
-        <div class="diagtext" style="width: 927px; height: 361px; left: 252px; top: 215.38px; position: absolute; color: #071916; font-size: 38px; font-family: Rubik; font-weight: 400; line-height: 49.02px; word-wrap: break-word">At Zeta Pi, our mission is to foster a community of passionate and innovative technology enthusiasts who are dedicated to advancing their skills, knowledge, and impact in the ever-evolving landscape of technology. Through collaboration, mentorship, and a commitment to excellence, we strive to create an environment where members can thrive both personally and professionally.</div>
-        <img class="mouse" style="width: 103px; height: 106px; left: 595px; top: 673.38px; position: absolute" src="images/mouse.png">
+<head>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <title>Zeta Pi Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="accordion.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Rubik:400,500,400italic,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <section class="section1">
+    <nav>
+      <a href="index.html"><img style="width: 91.71px; height: 80px" src="images/keycap-logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="eboard.html">e-board</a></li>
+          <li><a href="committee.html">committees</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">contact</a></li>
+          <li><a href="rush.html">rush</a></li>
+        </ul>
       </div>
-    </section>
-    
-    <!-- section 3 -->
-    <section class="section3">
-      <div class="heading">our pillars<br/></div>
-      <div class="Ellipse1" style="width: 611px; height: 600px; position: absolute; background: #BEE497; border-radius: 9999px"></div>
-      <img class="PillarPng" style="width: 522px; height: 516px; position: absolute" src="images/Pillar png.png">
-      <div class="Bars" style="width: 474px; height: 515px; position: absolute">
-        <!-- <div class="Rectangle1" style="width: 427.28px; height: 112px; position: absolute; background: #00261C; border-radius: 33px"></div>
+      <div class="icons" id="socialMedia">
+        <img class="Li" style="width: 28px; height: 28px" src="images/ca01c0802e67a69d9adad4ede41e3d8d.png">
+        <img class="Li" style="width: 28px; height: 28px" src="images/insta.png">
+        <img class="Li" style="width: 28px; height: 28px" src="images/tiktok 1.png">
+      </div>
+    </nav>
+    <div class="text-box">
+      <h1>zeta pi</h1>
+      <p>We are a Co-Ed Professional Technology Fraternity established in 2023 at the University of Michigan.</p>
+      <button class="hero-btn">
+        Apply Fall 2023
+      </button>
+    </div>
+    <img style="width: 729px; height: 755.04px; left: 586px; top: 71px; position: absolute" src="images/computer.png">
+  </section>
+
+  <!-- section2 -->
+  <section class="section2">
+    <div class="dialoguebox">
+      <img class="diag" style="width: 1030px; height: 653px; left: 205px; top: 110.38px; position: absolute"
+        src="images/dialoguebox.png">
+      <div class="diagtext"
+        style="width: 927px; height: 361px; left: 252px; top: 215.38px; position: absolute; color: #071916; font-size: 38px; font-family: Rubik; font-weight: 400; line-height: 49.02px; word-wrap: break-word">
+        At Zeta Pi, our mission is to foster a community of passionate and innovative technology enthusiasts who are
+        dedicated to advancing their skills, knowledge, and impact in the ever-evolving landscape of technology. Through
+        collaboration, mentorship, and a commitment to excellence, we strive to create an environment where members can
+        thrive both personally and professionally.</div>
+      <img class="mouse" style="width: 103px; height: 106px; left: 595px; top: 673.38px; position: absolute"
+        src="images/mouse.png">
+    </div>
+  </section>
+
+  <!-- section 3 -->
+  <section class="section3">
+    <div class="heading" style="margin-left: 160px;">our pillars<br /></div>
+    <img src="./images/our-pillars-photo.png" style="width: 80%; margin-left: 30px; padding-top: 50px;">
+
+
+    <!-- <div class="Rectangle1" style="width: 427.28px; height: 112px; position: absolute; background: #00261C; border-radius: 33px"></div>
         <div class="Rectangle2" style="width: 450px; height: 112px; position: absolute; background: #00261C; border-radius: 33px"></div>
         <div class="Rectangle3" style="width: 450px; height: 112px; position: absolute; background: #00261C; border-radius: 33px"></div> -->
-    </section>
-  </body>
+  </section>
+
+  <!-- section 4 -->
+  <section class="section4">
+    <div
+      style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding-top: 50px;">
+      <div>
+        <img src="./images/alpha class.png" style="max-width: 100%; max-height: 100%;">
+      </div>
+      <div>
+        <img src="./images/alpha-class-images.png">
+      </div>
+      <div style="display: flex; margin: auto;">
+        <p style="color: #BDE595;
+        font-family: Rubik;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 129%; /* 30.96px */
+        letter-spacing: 0.48px;">
+          Aarushi Shah<br>
+          Adarsh Pettappa<br>
+          Aleen El-Hindi<br>
+          Alexandra Enders<br>
+          Alexis Lee<br>
+          Andrew Busch<br>
+          Andrew Zhao<br>
+          Anna Jacoby<br>
+          Anshuman Madhukar<br>
+          Antonio D'Alessandro<br>
+          Asad Khan<br>
+          Brian Lee<br>
+          Chris Benson<br>
+          Connor Pang<br>
+          Diego Viramontes Vargas<br>
+          Emma Cho<br>
+          Eric Pengili<br>
+          Erin Lee<br>
+          Ernesto Enriquez
+        </p>
+        <p style="color: #BDE595;
+        font-family: Rubik;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 129%; /* 30.96px */
+        letter-spacing: 0.48px;">
+          Ethan McKean<br>
+          Harry Jung<br>
+          Isabella Yoon<br>
+          Isiah Bauzon<br>
+          Jasmine Tedjo<br>
+          Jessica Kahn<br>
+          Justin Smith<br>
+          Kaiping Lu<br>
+          Kiana Pandit<br>
+          Liyufei Meng<br>
+          Mandy Chen<br>
+          Maria Isho<br>
+          Marisa Kramer<br>
+          Michael Cui<br>
+          Nathan Vanderweide<br>
+          Nicholas Coles<br>
+          Nick Lin<br>
+          Nick Mathew<br>
+          Prosper Waldmann
+        </p>
+        <p style="color: #BDE595;
+        font-family: Rubik;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 129%; /* 30.96px */
+        letter-spacing: 0.48px;">
+          Rahul Giridhar<br>
+          Rhea Uppal<br>
+          Robert Fleur<br>
+          Samira Marquez<br>
+          Satyak Khare<br>
+          Shriya Kethireddy<br>
+          Sunny Xu<br>
+          Tanya Haque<br>
+          Tarjene Begum<br>
+          Tia Liu<br>
+          Yao An Yang<br>
+          Yukino Sakai
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- section 5 -->
+  <section class="section5">
+    <div style="padding-top: 100px;
+    margin: auto;
+    width: 659px;
+    height: 92px;
+    flex-shrink: 0;
+    color: #071A17;
+    font-family: Rubik;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 129%; /* 61.92px */
+    letter-spacing: -0.24px;">
+      frequently asked questions
+    </div>
+    <div id="faq">
+      <ul>
+        <li style="border-radius: 18px; background-color: #5F966E66;">
+          <input type="checkbox" checked>
+          <i></i>
+          <h2>how do i join?</h2>
+          <p>see the “rush” section for more details.</p>
+        </li>
+        <li style="border-radius: 18px; background-color: #5F966E66;">
+          <input type="checkbox" checked>
+          <i></i>
+          <h2>how is a tech frat different from a social frat?</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quasi, quia provident facere recusandae itaque assumenda fuga veniam dicta earum dolorem architecto facilis nisi pariatur.</p>
+        </li>
+        <li style="border-radius: 18px; background-color: #5F966E66;">
+          <input type="checkbox" checked>
+          <i></i>
+          <h2>how do i join a committee?</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quas placeat assumenda mollitia magni consequatur dolorum, quod nihil distinctio aperiam officia alias! Voluptate dolore ex officiis sit, magnam non a, eligendi pariatur aut, earum dolores tenetur ipsam id illo deleniti. Laudantium deserunt eaque ipsam voluptatum consequuntur voluptatibus sed minima ad accusamus debitis eos similique laboriosam, molestiae? Consequatur neque tempore quis. Eligendi, in ut aspernatur esse nesciunt libero.</p>
+        </li>
+        <li style="border-radius: 18px; background-color: #5F966E66;">
+          <input type="checkbox" checked>
+          <i></i>
+          <h2>what is a big/little mentorship?</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quasi, quia provident facere recusandae itaque assumenda fuga veniam dicta earum dolorem architecto facilis nisi pariatur.</p>
+        </li>
+        <li style="border-radius: 18px; background-color: #5F966E66;">
+          <input type="checkbox" checked>
+          <i></i>
+          <h2>how much of a time commitment is being a brother?</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quasi, quia provident facere recusandae itaque assumenda fuga veniam dicta earum dolorem architecto facilis nisi pariatur.</p>
+        </li>
+      </ul>
+    </div>
+    <script>
+      const checkboxes = document.querySelectorAll('#faq input[type="checkbox"]');
+    
+      checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', () => {
+          const li = checkbox.parentNode;
+          if (!checkbox.checked) {
+            li.style.backgroundColor = '#071A17';
+          } else {
+            li.style.backgroundColor = 'rgba(95, 150, 110, 0.40)';
+          }
+        });
+      });
+    </script>
+</body>
+
 </html>

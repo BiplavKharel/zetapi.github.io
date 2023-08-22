@@ -396,7 +396,7 @@ nav {
 }
 
 td {
-  color: var(--light, #BEE497);
+  color: white;
   font-size: 18px;
 }
 

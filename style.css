@@ -394,3 +394,13 @@ nav {
   text-align: center;
   padding-bottom: 15px;
 }
+
+td {
+  color: var(--light, #BEE497);
+  font-size: 18px;
+}
+
+th {
+  color: var(--light, #BEE497);
+  font-size: 18px;
+}

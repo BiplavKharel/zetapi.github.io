@@ -35,14 +35,6 @@ nav {
 .nav-links {
   flex: 1;
   text-align: right;
-  position: absolute;
-  background: #b2ff63;
-  height: 100vh;
-  width: 200px;
-  top: 0;
-  right: -200px;
-  text-align: left;
-  z-index: 2px;
 }
 
 .nav-links ul li {

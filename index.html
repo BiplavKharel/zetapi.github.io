@@ -29,6 +29,7 @@
               <li><a href="rush.html">rush</a></li>
           </ul>
       </div>
+      <i class="fa fa=bars" onclick="showMenu()"></i>
       <div class="icons" id="socialMedia">
           <a href="https://www.linkedin.com/company/91309323/admin/feed/posts/"><img class="Li" style="width: 28px; height: 28px; margin-right: 10px;" src="images/ca01c0802e67a69d9adad4ede41e3d8d.png"></a>
           <a href="https://www.instagram.com/zetapi.umich/"><img class="Li" style="width: 28px; height: 28px; margin-right: 10px;" src="images/insta.png"></a>
@@ -241,6 +242,16 @@
           }
         });
       });
+    </script>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
     </script>
 </body>
 

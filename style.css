@@ -27,6 +27,7 @@ nav {
   padding: 2% 6%;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 /* nav img{
@@ -42,6 +43,10 @@ nav {
   display: inline-block;
   padding: 8px 12px;
   position: relative;
+}
+
+.nav-links ul li a:hover {
+  color: var(--more-neon, #B2FF63);
 }
 
 .nav-links ul li a {
@@ -116,6 +121,8 @@ nav {
 
 .hero-btn:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-color: #98E44E;
+  transition: 0.15s ease;
 }
 
 .section2 {
@@ -526,6 +533,23 @@ nav .fa{
   margin: 10px;
   font-size: 22px;
   cursor: pointer;
+}
+
+/* Navbar icons */
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Li {
+  color: #98E44E;
+  font-size: 32px;
+  margin-right: 10px;
+}
+
+.Li:hover {
+  color: var(--more-neon, #B2FF63);
 }
 
 @media(max-width: 700px) {

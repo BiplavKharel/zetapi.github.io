@@ -2,119 +2,135 @@
 <html>
 
 <head>
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">
-    <title>Zeta Pi FAQ</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="accordion.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Rubik:400,500,400italic,700' rel='stylesheet' type='text/css'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <title>Zeta Pi FAQ</title>
+  <link rel="icon" href="./images/keycap-logo-dark.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Rubik:400,500,400italic,700' rel='stylesheet' type='text/css'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @media (max-width: 775px) {
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-      <!--import font awesome icons-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      /* Media query for screens smaller than 768px */
+      /* Adjust styles for mobile layout */
+      .nav-links {
+        display: none;
+        /* Hide navigation links */
+      }
+
+      .icons {
+        text-align: center;
+        /* Center social media icons */
+      }
+
+      /* Add any additional mobile-specific styles here */
+    }
+  </style>
 </head>
 
 <body>
-    <section class="section-1">
-        <nav style="z-index: 2;">
-            <a href="index.html"><img style="width: 91.71px; height: 80px;" src="images/keycap-logo.png"></a>
-            <div class="nav-links" id="navLinks" style="z-index: 2;">
-                <!-- <i class="fa fa-times" onclick="hideMenu()"></i> -->
-                <ul class="center-align">
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="eboard.html">e-board</a></li>
-                    <li><a href="committee.html">committees</a></li>
-                    <li><a href="faq.html"><u>FAQ</u></a></li>
-                    <li><a href="contact.html">contact</a></li>
-                    <li><a href="rush.html">rush</a></li>
-                </ul>
-            </div>
-            <div class="icons" id="socialMedia">
-              <a href="https://www.linkedin.com/company/91309323/admin/feed/posts/" target="_blank" style="width:100%;height:100%;"><i class="Li fab fa-linkedin"></i></a>
-              <a href="https://www.instagram.com/zetapi.umich/" target="_blank" style="width:100%;height:100%;"><i class="Li fab fa-instagram"></i></a>
-              <a href="https://www.tiktok.com/@zetapiumich" target="_blank" style="width:100%;height:100%;"><i class="Li fab fa-tiktok"></i></a>
-            </div>
-        </nav>
+  <section class="navBar">
+    <nav>
+      <a href="index.html"><img class="home-page-logo" src="images/keycap-logo.png"></a>
+      <div class="nav-links">
+        <ul class="center-alignc">
+          <li><a href="index.html" class="hvr-sweep-to-right">home</a></li>
+          <li><a href="eboard.html" class="hvr-sweep-to-right">e-board</a></li>
+          <li><a href="committee.html" class="hvr-sweep-to-right">committees</a></li>
+          <li><a href="faq.html" class="hvr-sweep-to-right"><u>FAQ</u></a></li>
+          <li><a href="contact.html" class="hvr-sweep-to-right">contact</li>
+          <li><a href="rush.html" class="hvr-sweep-to-right">rush</a></li>
+        </ul>
+      </div>
+      <div class="icons" id="socialMedia">
+        <a href="https://www.linkedin.com/company/91309323/admin/feed/posts/" target="_blank"
+          style="width:100%;height:100%;"><i class="Li fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/zetapi.umich/" target="_blank" style="width:100%;height:100%;"><i
+            class="Li fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@zetapiumich" target="_blank" style="width:100%;height:100%;"><i
+            class="Li fab fa-tiktok"></i></a>
+      </div>
+    </nav>
+  </section>
+
+  <div class="page-header">
+    <h2>FAQ</h2>
+  </div>
+
+  <div class="faq-details">
+    <section class="question">
+      <div class="question-text">
+        <h3>How do I join?</h3>
+        <p> We recruit new members at the beginning of fall and winter semester.
+          We require that you have atleast three semesters left at the university, 
+          otherwise everyone is welcome to apply! For rush dates and more details, 
+          see the <a href="rush.html" class="hvr-sweep-to-right">rush</a> section. 
+        </p>
+      </div>
     </section>
-    
-    <style>
-        .center-align {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 0;
-        }
-    
-        .center-align li {
-            margin: 0 15px;
-        }
-    </style>
 
-</section>
-<div class="faq3">FAQ</div>
-<div class="paragraphs">
-  <div class="how-do-i-join">how do i join?</div>
-  <div class="how-is-a-tech-frat-different-from-a-social-frat">
-    how is a tech frat different from a social frat?
-  </div>
-  <div class="how-do-i-join-a-committee">how do i join a committee?</div>
-  <div
-    class="any-brother-can-join-a-committee-at-any-time-during-the-semester-to-become-a-member-fill-out-the-google-form-linked-below-elections-for-committee-heads-are-held-every-year-before-winter-break-unfortunately-pledges-are-not-allowed-to-join-a-committee-or-run-for-a-committee-head-position-until-they-are-initiated-as-a-brother"
-  >
-    Any brother can join a committee at any time during the semester! To
-    become a member, fill out the google form linked below. Elections for
-    committee heads are held every year before winter break. Unfortunately,
-    pledges are not allowed to join a committee or run for a committee head
-    position until they are initiated as a brother.<br />
-  </div>
-  <div class="what-is-a-big-little-mentorship">
-    what is a big/little mentorship?
-  </div>
-  <div
-    class="big-little-mentorship-pairs-less-experienced-littles-with-more-experienced-older-bigs-that-act-as-mentors-to-help-guide-brothers-both-professionally-and-academically-bigs-act-as-a-safety-net-for-their-littles-and-help-them-assimilate-into-the-frat-after-their-initiation-big-little-reveals-take-place-after-pledge-initiation-each-semester-and-are-based-on-the-connections-made-between-pledges-and-brothers-during-the-pledging-process"
-  >
-    Big/little mentorship pairs less experienced &quot;littles&quot; with more
-    experienced, older &quot;bigs&quot; that act as mentors to help guide
-    brothers both professionally and academically. Bigs act as a safety net
-    for their littles and help them assimilate into the frat after their
-    initiation. Big/little reveals take place after pledge initiation each
-    semester, and are based on the connections made between pledges and
-    brothers during the pledging process.<br /><br />
-  </div>
-  <div class="how-much-of-a-time-commitment-is-being-a-brother">
-    how much of a time commitment is being a brother?
-  </div>
-  <div
-    class="the-answer-to-this-question-entirely-depends-on-you-any-member-of-the-exec-board-must-attend-two-meetings-a-week-so-the-time-commitment-is-fairly-high-members-of-other-committees-are-highly-encouraged-to-attend-their-weekly-committee-meeting-and-brothers-who-are-not-members-of-any-committee-are-not-required-to-attend-any-meetings-this-being-said-every-brother-must-attend-at-least-10-events-or-meetings-a-semester-to-retain-standing-so-the-baseline-time-commitment-is-about-an-hour-a-week"
-  >
-    The answer to this question entirely depends on you! Any member of the
-    Exec Board must attend two meetings a week, so the time commitment is
-    fairly high. Members of other committees are highly encouraged to attend
-    their weekly committee meeting, and brothers who are not members of any
-    committee are not required to attend any meetings. This being said, every
-    brother must attend at least 10 events or meetings a semester to retain
-    standing, so the baseline time commitment is about an hour a week.<br /><br />
-  </div>
-  <div
-    class="the-difference-between-professional-frats-and-social-frats-typically-is-the-focus-on-professional-development-as-well-as-the-absence-of-a-shared-living-space-in-other-words-unlike-your-typical-frat-or-sorority-on-campus-brothers-in-zeta-pi-are-not-required-to-live-together-in-a-house-although-there-is-a-strong-emphasis-of-community-and-brotherhood-in-zeta-pi-membership-aims-to-aid-you-in-your-professional-and-academic-career-instead-of-potentially-distracting-from-it-most-events-are-completely-optional-and-only-exist-for-the-benefit-of-the-brothers"
-  >
-    The difference between professional frats and social frats typically is
-    the focus on professional development as well as the absence of a shared
-    living space. In other words, unlike your typical frat or sorority on
-    campus, Brothers in Zeta Pi are not required to live together in a house.
-    Although there is a strong emphasis of community and brotherhood in Zeta
-    Pi, membership aims to aid you in your professional and academic career
-    instead of potentially distracting from it. Most events are completely
-    optional and only exist for the benefit of the brothers.
-  </div>
-  <div class="rush-dets">
-    See the "rush" section for more details.
-  </div>
-</div>
-</div>
+    <section class="question">
+      <div class="question-text">
+        <h3>How is a tech frat different from a social frat?</h3>
+        <p> The difference between professional frats and social frats typically is
+          the focus on professional development as well as the absence of a shared
+          living space. In other words, unlike your typical frat or sorority on
+          campus, Brothers in Zeta Pi are not required to live together in a house.
+          Although there is a strong emphasis of community and brotherhood in Zeta
+          Pi, membership aims to aid you in your professional and academic career
+          instead of potentially distracting from it. Most events are completely
+          optional and only exist for the benefit of the brothers.
+        </p>
+      </div>
+    </section>
 
-   
+    <section class="question">
+      <div class="question-text">
+        <h3>How do I join a committee?</h3>
+        <p> Any brother can join a committee at any time during the semester! To
+          become a member, fill out the google form linked below. Elections for
+          committee heads are held every year before winter break. Unfortunately,
+          pledges are not allowed to join a committee or run for a committee head
+          position until they are initiated as a brother.</p>
+      </div>
+    </section>
+
+    <section class="question">
+      <div class="question-text">
+        <h3>What is a big/little mentorship?</h3>
+        <p> Big/little mentorship pairs less experienced "littles" with more
+          experienced, older "bigs" that act as mentors to help guide brothers
+          both professionally and academically. Bigs act as a safety net for their
+          littles and help them assimilate into the frat after their initiation.
+          Big/little reveals take place after pledge initiation each semester, and
+          are based on the connections made between pledges and brothers during the
+          pledging process.
+        </p>
+      </div>
+    </section>
+
+    <section class="question">
+      <div class="question-text">
+        <h3>How much of a time commitment is being a brother?</h3>
+        <p> The answer to this question entirely depends on you! Any member of the
+          Exec Board must attend two meetings a week, so the time commitment is fairly
+          high. Members of other committees are highly encouraged to attend their weekly
+          committee meeting, and brothers who are not members of any committee are not
+          required to attend any meetings. This being said, every brother must attend at
+          least 10 events or meetings a semester to retain standing, so the baseline time
+          commitment is about an hour a week.
+        </p>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+
+</html>

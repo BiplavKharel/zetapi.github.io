@@ -20,45 +20,46 @@
 
     <!--import fontawesome icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        @media (max-width: 1190px) {
+    
+            /* Media query for screens smaller than 768px */
+            /* Adjust styles for mobile layout */
+            .nav-links {
+                display: none;
+                /* Hide navigation links */
+            }
+    
+            .icons {
+                text-align: center;
+                /* Center social media icons */
+            }
+    
+            /* Add any additional mobile-specific styles here */
+        }
+    </style>
 </head>
 
 <body style="background-color: #09211D;">
-    <section class="eboardNav">
-        <nav style="z-index: 2;">
-            <a href="index.html"><img style="width: 91.71px; height: 80px;" src="images/keycap-logo.png"></a>
-            <div class="nav-links" id="navLinks" style="z-index: 2;">
-                <!-- <i class="fa fa-times" onclick="hideMenu()"></i> -->
-                <ul class="center-align">
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="eboard.html"><u>e-board</u></a></li>
-                    <li><a href="committee.html">committees</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contact.html">contact</a></li>
-                    <li><a href="rush.html">rush</a></li>
-                </ul>
-            </div>
-            <div class="icons" id="socialMedia">
-                <a href="https://www.linkedin.com/company/91309323/admin/feed/posts/" target="_blank" style="width:100%;height:100%;"><i class="Li fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/zetapi.umich/" target="_blank" style="width:100%;height:100%;"><i class="Li fab fa-instagram"></i></a>
-                <a href="https://www.tiktok.com/@zetapiumich" target="_blank" style="width:100%;height:100%;"><i class="Li fab fa-tiktok"></i></a>
-            </div>
-        </nav>
+    <nav class="navBar">
+        <a href="index.html"><img class="home-page-logo" src="images/keycap-logo.png"></a>
+        <div class="nav-links">
+            <ul class="center-alignc">
+                <li><a href="index.html" class="hvr-sweep-to-right" >home</a></li>
+                <li><a href="eboard.html" class="hvr-sweep-to-right" ><u>e-board</u></a></li>
+                <li><a href="committee.html" class="hvr-sweep-to-right">committees</a></li>
+                <li><a href="faq.html" class="hvr-sweep-to-right">FAQ</a></li>
+                <li><a href="contact.html" class="hvr-sweep-to-right">contact</li>
+                <li><a href="rush.html" class="hvr-sweep-to-right">rush</a></li>
+            </ul>
+        </div>
+        <div class="icons">
+            <a href="https://www.linkedin.com/company/91309323/admin/feed/posts/" target="_blank"><i class="Li fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/zetapi.umich/" target="_blank"><i class="Li fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@zetapiumich" target="_blank"><i class="Li fab fa-tiktok"></i></a>
+        </div>
+    </nav>
 
-        
-  <style>
-    .center-align {
-        display: flex;
-        justify-content: center;
-        list-style: none;
-        padding: 0;
-    }
-
-    .center-align li {
-        margin: 0 15px;
-    }
-    </style>
-    </section>
-    
     <style>
         .center-align {
             display: flex;
@@ -66,292 +67,294 @@
             list-style: none;
             padding: 0;
         }
-    
+
         .center-align li {
             margin: 0 15px;
         }
+
         .committeesSection {
-        background-color: #09211D; /* Use the desired green color */
-        text-align: center;
-    }
+            background-color: #09211D;
+            /* Use the desired green color */
+            text-align: center;
+        }
 
-    .committeesContainer {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 50px 0;
-    }
+        .committeesContainer {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 0;
+        }
 
-    .committeesContainer h2 {
-        color: var(--more-neon, #B2FF63);
-        font-family: Rubik;
-        font-size: 96px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: -1.92px; 
-    }
+        .committeesContainer h2 {
+            color: var(--more-neon, #B2FF63);
+            font-family: Rubik;
+            font-size: 96px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -1.92px;
+        }
     </style>
 
-<section class="committeesSection">
-    <div class="committeesContainer">
-        <h2>Executive Board</h2>
-    </div>
-</section>
+    <section class="committeesSection">
+        <div class="page-header">
+            <h2>Executive Board</h2>
+        </div>
+    </section>
 
-        <div class="container" style="padding-top: 100px; background-color: #09211D; width: 100%;">
-            <div class="row">
-                <div class="col-md-4 mb-4 no-border">
-                    <div class="card bg-transparent border-0">
-                        <div class="card-body" style="padding: 20px;"> <!-- Adjusted padding value -->
-                            <div class="eboardHeadshot">
-                                <div class="img__wrap">
-                                    <img class="img__img" src="./images/headshots/Lexa.png" />
-                                    <div class="img__description_layer">
-                                        <div class="img__description">
-                                            <div class="img_desc_header">Major:</div>
-                                            <div class="img_desc_body">
-                                                Computer Engineering
-                                            </div>
-                                            <div class="img_desc_header">Interests:</div>
-                                            <div class="img_desc_body">
-                                                Reading, programming, health and wellness, and cooking
-                                            </div>
+    <div class="container" style="padding-top: 100px; background-color: #09211D; width: 100%;">
+        <div class="row">
+            <div class="col-md-4 mb-4 no-border">
+                <div class="card bg-transparent border-0">
+                    <div class="card-body" style="padding: 20px;"> <!-- Adjusted padding value -->
+                        <div class="eboardHeadshot">
+                            <div class="img__wrap">
+                                <img class="img__img" src="./images/headshots/Lexa.png" />
+                                <div class="img__description_layer">
+                                    <div class="img__description">
+                                        <div class="img_desc_header">Major:</div>
+                                        <div class="img_desc_body">
+                                            Computer Engineering
+                                        </div>
+                                        <div class="img_desc_header">Interests:</div>
+                                        <div class="img_desc_body">
+                                            Reading, programming, health and wellness, and cooking
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="eboardName">Alexandra Enders</div>
-                            <div class="eboardTitle">President</div>
                         </div>
+                        <div class="eboardName">Alexandra Enders</div>
+                        <div class="eboardTitle">President</div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card bg-transparent border-0">
-                        <div class="card-body" style="padding: 20px;"> <!-- Adjusted padding value -->
-                            <div class="eboardHeadshot">
-                                <div class="img__wrap">
-                                    <img class="img__img" src="./images/headshots/Antonio Photo.png" />
-                                    <div class="img__description_layer">
-                                        <div class="img__description">
-                                            <div class="img_desc_header">Major:</div>
-                                            <div class="img_desc_body">
-                                                Computer Engineering
-                                            </div>
-                                            <div class="img_desc_header">Interests:</div>
-                                            <div class="img_desc_body">
-                                                Cars and motorcycles, running, soccer, and programming
-                                            </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-transparent border-0">
+                    <div class="card-body" style="padding: 20px;"> <!-- Adjusted padding value -->
+                        <div class="eboardHeadshot">
+                            <div class="img__wrap">
+                                <img class="img__img" src="./images/headshots/Antonio Photo.png" />
+                                <div class="img__description_layer">
+                                    <div class="img__description">
+                                        <div class="img_desc_header">Major:</div>
+                                        <div class="img_desc_body">
+                                            Computer Engineering
+                                        </div>
+                                        <div class="img_desc_header">Interests:</div>
+                                        <div class="img_desc_body">
+                                            Cars and motorcycles, running, soccer, and programming
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="eboardName">Antonio D'Alessandro</div>
-                            <div class="eboardTitle">Executive Vice President</div>
                         </div>
+                        <div class="eboardName">Antonio D'Alessandro</div>
+                        <div class="eboardTitle">Executive Vice President</div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card bg-transparent border-0">
-                        <div class="card-body" style="padding: 20px;"> <!-- Adjusted padding value -->
-                            <div class="eboardHeadshot">
-                                <div class="img__wrap">
-                                    <img class="img__img" src="./images/headshots/Liyufei.png" />
-                                    <div class="img__description_layer">
-                                        <div class="img__description">
-                                            <div class="img_desc_header">Major:</div>
-                                            <div class="img_desc_body">
-                                                Computer Science
-                                            </div>
-                                            <div class="img_desc_header">Interests:</div>
-                                            <div class="img_desc_body">
-                                                Violin, badminton, games, and AI
-                                            </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-transparent border-0">
+                    <div class="card-body" style="padding: 20px;"> <!-- Adjusted padding value -->
+                        <div class="eboardHeadshot">
+                            <div class="img__wrap">
+                                <img class="img__img" src="./images/headshots/Liyufei.png" />
+                                <div class="img__description_layer">
+                                    <div class="img__description">
+                                        <div class="img_desc_header">Major:</div>
+                                        <div class="img_desc_body">
+                                            Computer Science
+                                        </div>
+                                        <div class="img_desc_header">Interests:</div>
+                                        <div class="img_desc_body">
+                                            Violin, badminton, games, and AI
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="eboardName">Liyufei Meng</div>
-                            <div class="eboardTitle">VP of Academic Development</div>
                         </div>
+                        <div class="eboardName">Liyufei Meng</div>
+                        <div class="eboardTitle">VP of Academic Development</div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card bg-transparent border-0">
-                        <div class="card-body" style="padding: 20px;"> <!-- Adjusted padding value -->
-                            <div class="eboardHeadshot">
-                                <div class="img__wrap">
-                                    <img class="img__img" src="./images/headshots/Michael.png" />
-                                    <div class="img__description_layer">
-                                        <div class="img__description">
-                                            <div class="img_desc_header">Major:</div>
-                                            <div class="img_desc_body">
-                                                Computer Science
-                                            </div>
-                                            <div class="img_desc_header">Interests:</div>
-                                            <div class="img_desc_body">
-                                                Volleyball and basketball
-                                            </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-transparent border-0">
+                    <div class="card-body" style="padding: 20px;"> <!-- Adjusted padding value -->
+                        <div class="eboardHeadshot">
+                            <div class="img__wrap">
+                                <img class="img__img" src="./images/headshots/Michael.png" />
+                                <div class="img__description_layer">
+                                    <div class="img__description">
+                                        <div class="img_desc_header">Major:</div>
+                                        <div class="img_desc_body">
+                                            Computer Science
+                                        </div>
+                                        <div class="img_desc_header">Interests:</div>
+                                        <div class="img_desc_body">
+                                            Volleyball and basketball
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="eboardName">Michael Cui</div>
-                            <div class="eboardTitle">VP of Recruitment & Membership</div>
                         </div>
+                        <div class="eboardName">Michael Cui</div>
+                        <div class="eboardTitle">VP of Recruitment & Membership</div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card bg-transparent border-0">
-                        <div class="card-body" style="padding: 20px;"> <!-- Adjusted padding value -->
-                            <div class="eboardHeadshot">
-                                <div class="img__wrap">
-                                    <img class="img__img" src="./images/headshots/Jessie.png" />
-                                    <div class="img__description_layer">
-                                        <div class="img__description">
-                                            <div class="img_desc_header">Major:</div>
-                                            <div class="img_desc_body">
-                                                Computer Science
-                                            </div>
-                                            <div class="img_desc_header">Interests:</div>
-                                            <div class="img_desc_body">
-                                                Spending time outside, reading, exercise, and eating good food
-                                            </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-transparent border-0">
+                    <div class="card-body" style="padding: 20px;"> <!-- Adjusted padding value -->
+                        <div class="eboardHeadshot">
+                            <div class="img__wrap">
+                                <img class="img__img" src="./images/headshots/Jessie.png" />
+                                <div class="img__description_layer">
+                                    <div class="img__description">
+                                        <div class="img_desc_header">Major:</div>
+                                        <div class="img_desc_body">
+                                            Computer Science
+                                        </div>
+                                        <div class="img_desc_header">Interests:</div>
+                                        <div class="img_desc_body">
+                                            Spending time outside, reading, exercise, and eating good food
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="eboardName">Jessie Kahn</div>
-                            <div class="eboardTitle">VP of Recruitment & Membership</div>
                         </div>
+                        <div class="eboardName">Jessie Kahn</div>
+                        <div class="eboardTitle">VP of Recruitment & Membership</div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card bg-transparent border-0">
-                        <div class="card-body" style="padding: 20px;"> <!-- Adjusted padding value -->
-                            <div class="eboardHeadshot">
-                                <div class="img__wrap">
-                                    <img class="img__img" src="./images/headshots/Alexis Photo.png" />
-                                    <div class="img__description_layer">
-                                        <div class="img__description">
-                                            <div class="img_desc_header">Major:</div>
-                                            <div class="img_desc_body">
-                                                Robotics Engineering
-                                            </div>
-                                            <div class="img_desc_header">Interests:</div>
-                                            <div class="img_desc_body">
-                                                Film/Photography, Fashion/thrifting, crystals, and sleeping
-                                            </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-transparent border-0">
+                    <div class="card-body" style="padding: 20px;"> <!-- Adjusted padding value -->
+                        <div class="eboardHeadshot">
+                            <div class="img__wrap">
+                                <img class="img__img" src="./images/headshots/Alexis Photo.png" />
+                                <div class="img__description_layer">
+                                    <div class="img__description">
+                                        <div class="img_desc_header">Major:</div>
+                                        <div class="img_desc_body">
+                                            Robotics Engineering
+                                        </div>
+                                        <div class="img_desc_header">Interests:</div>
+                                        <div class="img_desc_body">
+                                            Film/Photography, Fashion/thrifting, crystals, and sleeping
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="eboardName">Alexis Lee</div>
-                            <div class="eboardTitle">VP of Social Committee</div>
                         </div>
+                        <div class="eboardName">Alexis Lee</div>
+                        <div class="eboardTitle">VP of Social Committee</div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card bg-transparent border-0">
-                        <div class="card-body" style="padding: 20px;"> <!-- Adjusted padding value -->
-                            <div class="eboardHeadshot">
-                                <div class="img__wrap">
-                                    <img class="img__img" src="./images/headshots/Sam.png" />
-                                    <div class="img__description_layer">
-                                        <div class="img__description">
-                                            <div class="img_desc_header">Major:</div>
-                                            <div class="img_desc_body">
-                                                UX Design
-                                            </div>
-                                            <div class="img_desc_header">Interests:</div>
-                                            <div class="img_desc_body">
-                                                Gym, music, reading, and painting
-                                            </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-transparent border-0">
+                    <div class="card-body" style="padding: 20px;"> <!-- Adjusted padding value -->
+                        <div class="eboardHeadshot">
+                            <div class="img__wrap">
+                                <img class="img__img" src="./images/headshots/Sam.png" />
+                                <div class="img__description_layer">
+                                    <div class="img__description">
+                                        <div class="img_desc_header">Major:</div>
+                                        <div class="img_desc_body">
+                                            UX Design
+                                        </div>
+                                        <div class="img_desc_header">Interests:</div>
+                                        <div class="img_desc_body">
+                                            Gym, music, reading, and painting
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="eboardName">Sam Marquez</div>
-                            <div class="eboardTitle">VP of Ethics Committee</div>
                         </div>
+                        <div class="eboardName">Sam Marquez</div>
+                        <div class="eboardTitle">VP of Ethics Committee</div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card bg-transparent border-0">
-                        <div class="card-body" style="padding: 20px;"> <!-- Adjusted padding value -->
-                            <div class="eboardHeadshot">
-                                <div class="img__wrap">
-                                    <img class="img__img" src="./images/headshots/Aarushi.png" />
-                                    <div class="img__description_layer">
-                                        <div class="img__description">
-                                            <div class="img_desc_header">Major:</div>
-                                            <div class="img_desc_body">
-                                                Computer Engineering
-                                            </div>
-                                            <div class="img_desc_header">Interests:</div>
-                                            <div class="img_desc_body">
-                                                Spending time in nature, reading, painting, music, and working out
-                                            </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-transparent border-0">
+                    <div class="card-body" style="padding: 20px;"> <!-- Adjusted padding value -->
+                        <div class="eboardHeadshot">
+                            <div class="img__wrap">
+                                <img class="img__img" src="./images/headshots/Aarushi.png" />
+                                <div class="img__description_layer">
+                                    <div class="img__description">
+                                        <div class="img_desc_header">Major:</div>
+                                        <div class="img_desc_body">
+                                            Computer Engineering
+                                        </div>
+                                        <div class="img_desc_header">Interests:</div>
+                                        <div class="img_desc_body">
+                                            Spending time in nature, reading, painting, music, and working out
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="eboardName">Aarushi Shah</div>
-                            <div class="eboardTitle">VP of Fundraising</div>
                         </div>
+                        <div class="eboardName">Aarushi Shah</div>
+                        <div class="eboardTitle">VP of Fundraising</div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card bg-transparent border-0">
-                        <div class="card-body" style="padding: 20px;"> <!-- Adjusted padding value -->
-                            <div class="eboardHeadshot">
-                                <div class="img__wrap">
-                                    <img class="img__img" src="./images/headshots/Nick.png" />
-                                    <div class="img__description_layer">
-                                        <div class="img__description">
-                                            <div class="img_desc_header">Major:</div>
-                                            <div class="img_desc_body">
-                                                Computer Science
-                                            </div>
-                                            <div class="img_desc_header">Interests:</div>
-                                            <div class="img_desc_body">
-                                                Reading, spending time with friends, and exploring parks in A2
-                                            </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-transparent border-0">
+                    <div class="card-body" style="padding: 20px;"> <!-- Adjusted padding value -->
+                        <div class="eboardHeadshot">
+                            <div class="img__wrap">
+                                <img class="img__img" src="./images/headshots/Nick.png" />
+                                <div class="img__description_layer">
+                                    <div class="img__description">
+                                        <div class="img_desc_header">Major:</div>
+                                        <div class="img_desc_body">
+                                            Computer Science
+                                        </div>
+                                        <div class="img_desc_header">Interests:</div>
+                                        <div class="img_desc_body">
+                                            Reading, spending time with friends, and exploring parks in A2
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="eboardName">Nicholas Coles</div>
-                            <div class="eboardTitle">VP of Professional Development</div>
                         </div>
+                        <div class="eboardName">Nicholas Coles</div>
+                        <div class="eboardTitle">VP of Professional Development</div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card bg-transparent border-0">
-                        <div class="card-body" style="padding: 20px;"> <!-- Adjusted padding value -->
-                            <div class="eboardHeadshot">
-                                <div class="img__wrap">
-                                    <img class="img__img" src="./images/headshots/Maria.png" />
-                                    <div class="img__description_layer">
-                                        <div class="img__description">
-                                            <div class="img_desc_header">Major:</div>
-                                            <div class="img_desc_body">
-                                                Art and Design
-                                            </div>
-                                            <div class="img_desc_header">Interests:</div>
-                                            <div class="img_desc_body">
-                                                Music, video games, dramas, digital art, and reading
-                                            </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-transparent border-0">
+                    <div class="card-body" style="padding: 20px;"> <!-- Adjusted padding value -->
+                        <div class="eboardHeadshot">
+                            <div class="img__wrap">
+                                <img class="img__img" src="./images/headshots/Maria.png" />
+                                <div class="img__description_layer">
+                                    <div class="img__description">
+                                        <div class="img_desc_header">Major:</div>
+                                        <div class="img_desc_body">
+                                            Art and Design
+                                        </div>
+                                        <div class="img_desc_header">Interests:</div>
+                                        <div class="img_desc_body">
+                                            Music, video games, dramas, digital art, and reading
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="eboardName">Maria Isho</div>
-                            <div class="eboardTitle">VP of Marketing</div>
                         </div>
+                        <div class="eboardName">Maria Isho</div>
+                        <div class="eboardTitle">VP of Marketing</div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
 
     </section>

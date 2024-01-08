@@ -1,5 +1,5 @@
 #faq body {
-  background: #f4f4f4;
+  /* background: #f4f4f4; */
   display: flex;
 }
 
@@ -24,6 +24,12 @@ p,
 ul li i:before,
 ul li i:after {
   transition: all 0.3s;
+}
+
+.faq-box {
+  border-radius: 18px;
+  background-color: #5F966E66;
+  font-family: Rubik;
 }
 
 #faq .no-select,
@@ -65,8 +71,6 @@ ul li i:after {
   line-height: 1.45;
   position: relative;
   overflow: hidden;
-  max-height: 250px;
-  will-change: max-height;
   contain: layout;
   display: inline-block;
   opacity: 1;
@@ -93,7 +97,6 @@ ul li i:after {
   margin: 0;
   /*padding-bottom: 4px;*/
   /*padding-top: 18px;*/
-  background: #fff;
   box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.1);
   -webkit-tap-highlight-color: transparent;
 }
@@ -162,7 +165,7 @@ ul li i:after {
 }
 
 #faq ul li input[type=checkbox]:not(:checked)+h2 {
-  background-color: #071A17;
+  /* background-color: #071A17; */
 }
 
 #faq ul li input[type=checkbox]:checked~p {

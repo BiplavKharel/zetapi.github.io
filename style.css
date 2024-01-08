@@ -392,7 +392,7 @@ nav {
   color: var(--dark, #09211D);
   text-align: center;
   font-family: Rubik;
-  font-size: 32px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -402,7 +402,7 @@ nav {
 .img_desc_body {
   color: var(--dark, #09211D);
   font-family: Rubik;
-  font-size: 24px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -411,6 +411,8 @@ nav {
   flex-shrink: 0;
   text-align: center;
   padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 

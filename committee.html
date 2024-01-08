@@ -54,7 +54,12 @@
         </div>
     </nav>
 
+
+
+
+
     <div class="page-header">
+        <span class="brr"><br><br></span>
         <h2>Committees</h2>
     </div>
 
@@ -157,5 +162,44 @@
             </div>
         </section>
     </div>
+
+    <style>
+        .brr {
+            display: none;
+        }
+        @media screen and (max-width: 500px) {
+
+            .brr {
+                display: block;
+            }
+            .page-header h2 {
+                font-size: 50px; 
+
+            }
+
+            .committee-text h3 {
+                color: var(--dark, #09211D);
+                font-family: Rubik;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 129%;
+            }
+
+            .committee-text p {
+                color: var(--dark, #09211D);
+                font-family: Rubik;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 129%;
+            }
+
+            .committee img{
+                display: none;
+            }
+        
+        }
+    </style>
 </body>
 </html>

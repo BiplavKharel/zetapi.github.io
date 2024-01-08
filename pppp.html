@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Bar Navigation</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+
+        nav a:hover {
+            background-color: #777;
+        }
+
+        /* Hamburger menu styles */
+        .hamburger-menu {
+            display: none;
+            cursor: pointer;
+            padding: 15px;
+            background-color: #333;
+            color: white;
+            font-size: 18px;
+        }
+
+        @media screen and (max-width: 400px) {
+            nav {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background-color: #555;
+            }
+
+            nav.show {
+                display: flex;
+            }
+
+            .hamburger-menu {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Top Bar Navigation</h1>
+        <div class="hamburger-menu" onclick="toggleNav()">Menu ☰</div>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Your page content goes here -->
+
+    <script>
+        function toggleNav() {
+            document.querySelector('nav').classList.toggle('show');
+        }
+    </script>
+
+</body>
+
+</html>

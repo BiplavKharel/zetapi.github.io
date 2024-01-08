@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css2?family=Silkscreen' rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Rubik:400,500,400italic,700' rel='stylesheet' type='text/css'>
   <!--import font awesome icons-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -19,233 +20,355 @@
 <body>
   <section class="section1">
     <nav style="z-index: 2;">
-      <a href="index.html"><img style="width: 91.71px; height: 80px;" src="images/keycap-logo.png"></a>
+      <a href="index.html"><img src="images/keycap-logo.png"></a>
       <div class="nav-links" id="navLinks" style="z-index: 2;">
-          <!-- <i class="fa fa-times" onclick="hideMenu()"></i> -->
-          <ul class="center-align">
-              <li><a href="index.html"><u>home</u></a></li>
-              <li><a href="eboard.html">e-board</a></li>
-              <li><a href="committee.html">committees</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-              <li><a href="contact.html">contact</a></li>
-              <li><a href="rush.html">rush</a></li>
-          </ul>
+        <ul class="center-align">
+          <li><a href="index.html"><u>home</u></a></li>
+          <li><a href="eboard.html">e-board</a></li>
+          <li><a href="committee.html">committees</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">contact</a></li>
+          <li><a href="rush.html">rush</a></li>
+        </ul>
       </div>
-      <i class="fa fa=bars" onclick="showMenu()"></i>
       <div class="icons" id="socialMedia">
-          <a href="https://www.linkedin.com/company/91309323/admin/feed/posts/" target="_blank" style="width:100%;height:100%;"><i class="Li fab fa-linkedin"></i></a>
-          <a href="https://www.instagram.com/zetapi.umich/" target="_blank" style="width:100%;height:100%;"><i class="Li fab fa-instagram"></i></a>
-          <a href="https://www.tiktok.com/@zetapiumich" target="_blank" style="width:100%;height:100%;"><i class="Li fab fa-tiktok"></i></a>
+        <a href="https://www.linkedin.com/company/91309323/admin/feed/posts/" target="_blank"
+          style="width:100%;height:100%;"><i class="Li fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/zetapi.umich/" target="_blank" style="width:100%;height:100%;"><i
+            class="Li fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@zetapiumich" target="_blank" style="width:100%;height:100%;"><i
+            class="Li fab fa-tiktok"></i></a>
       </div>
-  </nav>
-
-  <style>
-    .center-align {
+    </nav>
+    <style>
+      @media (max-width: 1200px) {}
+    </style>
+    <style>
+      .center-align {
         display: flex;
         justify-content: center;
         list-style: none;
         padding: 0;
-    }
-
-    .center-align li {
-        margin: 0 15px;
-    }
-    </style>
-   
-
-      
-    </section>
-    <div class="text-box">
-      <h1>zeta pi</h1>
-      <p>We are a Co-Ed Professional Technology Fraternity established in 2023 at the University of Michigan.</p>
-      <a href="rush.html">
-      <button class="hero-btn">
-        Apply Fall 2023
-      </button>
-    </a>
-    </div>
-    <div class="computerimg">
-       <img style="width: 729px; height: 755.04px; left: 586px; top: 71px; position: absolute; z-index: 1;" src="images/computer.png">
-    </div>
-  
-    <style>
-      @media(max-width: 800px) {
-      .computerimg{
-        display: none;
       }
-    }
+
+      .center-align li {
+        margin: 0 15px;
+      }
     </style>
+
+    <div class="top-container">
+      <div class="text-box">
+        <h1>Zeta Pi</h1>
+        <p>We are a Co-Ed Professional Technology Fraternity established in 2023 at the University of Michigan.</p>
+        <div class="btn-container">
+          <a href="rush.html">
+            <button class="hero-btn">
+              Apply Winter 2024
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div class="computerimg">
+        <img style="position: relative; z-index: 1;" src="images/computer.png">
+      </div>
+      <style>
+        .top-container {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr;
+          gap: 0px 0px;
+          grid-auto-flow: row;
+          grid-template-areas:
+            "text-box computerimg";
+        }
+
+        .text-box {
+          grid-area: text-box;
+        }
+
+        .computerimg {
+          grid-area: computerimg;
+        }
+
+        @media(min-width:800px) and (max-width: 1314px) {
+          .computerimg {
+            display: none;
+          }
+
+          .top-container {
+            grid-template-columns: 1fr;
+          }
+
+          .text-box p {
+            max-width: 75%;
+          }
+        }
+
+        @media(max-width: 800px) {
+          .computerimg {
+            display: none;
+          }
+
+          .text-box h1 {
+            justify-content: center;
+            display: flex;
+            padding-left: 0%;
+          }
+
+          .text-box p {
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            padding-left: 5%;
+            padding-right: 5%;
+            width: 100%;
+          }
+
+          .btn-container {
+            width: 100%;
+            justify-content: center;
+            display: flex;
+          }
+
+          .hero-btn {
+            left: 0%;
+            text-align: center;
+            display: flex;
+          }
+
+          .top-container {
+            grid-template-columns: 1fr;
+          }
+        }
+      </style>
+    </div>
   </section>
 
   <!-- section2 -->
   <section class="section2">
     <div class="dialoguebox">
-      <img class="diag" style="width: 1030px; height: 653px; left: 205px; top: 110.38px; position: absolute"
-        src="images/dialoguebox.png">
-      <div class="diagtext"
-        style="width: 927px; height: 361px; left: 252px; top: 215.38px; position: absolute; color: #071916; font-size: 38px; font-family: Rubik; font-weight: 400; line-height: 49.02px; word-wrap: break-word">
+
+      <img class="diag-mobile" src="images/diag-mobile.svg"></img>
+
+      <!-- <img class="diag" src="images/dialoguebox.png"> -->
+      <img class="diag" src="images/diag.svg"></img>
+
+      <!-- <div class="diag-text">
         At Zeta Pi, our mission is to foster a community of passionate and innovative technology enthusiasts who are
-        dedicated to advancing their skills, knowledge, and impact in the ever-evolving landscape of technology. Through
-        collaboration, mentorship, and a commitment to excellence, we strive to create an environment where members can
-        thrive both personally and professionally.</div>
-      <img class="mouse" style="width: 103px; height: 106px; left: 595px; top: 673.38px; position: absolute"
-        src="images/mouse.png">
+        dedicated to advancing their skills, knowledge, and impact in the ever-evolving landscape of technology.
+        Through collaboration, mentorship, and a commitment to excellence, we strive to create an environment where
+        members can
+        thrive both personally and professionally.</div> -->
+      <!-- <img class="mouse" src="images/mouse.png"> -->
     </div>
   </section>
 
   <!-- section 3 -->
   <section class="section3">
-    <div class="heading" style="margin-left: 160px;">our pillars<br /></div>
-    <img src="./images/our-pillars-photo.png" style="width: 80%; margin-left: 30px; padding-top: 50px;">
+    <div class="heading">Our Pillars<br /></div>
 
+    <div style="display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;">
+      <img src="./images/our-pillars-photo.png" class="pillars">
+    </div>
 
+    <div class="pillars-mobile">
+
+      <img style="max-width:20%" src='./images/pillar.png'>
+      <div class="pillar-rectangle">
+        kindness
+      </div>
+      <div class="pillar-rectangle">
+        ambition
+      </div>
+      <div class="pillar-rectangle">
+        equality
+      </div>
+      <div class="pillar-rectangle">
+        balance
+      </div>
+    </div>
     <!-- <div class="Rectangle1" style="width: 427.28px; height: 112px; position: absolute; background: #00261C; border-radius: 33px"></div>
         <div class="Rectangle2" style="width: 450px; height: 112px; position: absolute; background: #00261C; border-radius: 33px"></div>
         <div class="Rectangle3" style="width: 450px; height: 112px; position: absolute; background: #00261C; border-radius: 33px"></div> -->
   </section>
 
   <!-- section 4 -->
-  <section class="section4">
-    <div
-      style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding-top: 50px;">
+  <section class="section4" style="width:100%">
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding-top: 10%;">
       <div>
-        <img src="./images/alpha class.png" style="max-width: 100%; max-height: 100%;">
+        <!-- <img src="./images/alpha class.png" style="max-width: 100%; max-height: 100%;"> -->
+        <div class="heading"
+          style="font-size: clamp(1rem, 8vw, 6rem); color:#BEE498; margin-left: 0%; font-family: silkscreen; transform: perspective(500px) rotateX(20deg)">
+          Active
+          Brothers<br /></div>
       </div>
       <div>
-        <img src="./images/alpha-class-images.png">
+        <img src="./images/alpha-class-images.png" style="max-width: 100%">
       </div>
-      <div style="display: flex; margin: auto;">
-        <p style="color: #BDE595;
-        font-family: Rubik;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 129%; /* 30.96px */
-        letter-spacing: 0.48px;">
-          Aarushi Shah<br>
+      <div class="column-container">
+        <p class="class-columns">
+            Aarushi Shah<br>
           Adarsh Pettappa<br>
+          Aaron Schwarz<br>
           Aleen El-Hindi<br>
           Alexandra Enders<br>
           Alexis Lee<br>
+          Alisha Tiller<br>
+          Amey Krishna<br>
+          Amogh Madireddi<br>
+          Andrew Yang<br>
           Andrew Busch<br>
           Andrew Zhao<br>
           Anna Jacoby<br>
           Anshuman Madhukar<br>
           Antonio D'Alessandro<br>
           Asad Khan<br>
+          Bartu Geyik<br>
+          Audrey Nguyen<br>
           Brian Lee<br>
-          Chris Benson<br>
+          Christopher Benson<br>
           Connor Pang<br>
+          Debangi Mohanta<br>
           Diego Viramontes Vargas<br>
-          Emma Cho<br>
-          Eric Pengili<br>
-          Erin Lee<br>
-          Ernesto Enriquez
+          Emma Cho
         </p>
-        <p style="color: #BDE595;
-        font-family: Rubik;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 129%; /* 30.96px */
-        letter-spacing: 0.48px;">
-          Ethan McKean<br>
-          Harry Jung<br>
-          Isabella Yoon<br>
-          Isiah Bauzon<br>
-          Jasmine Tedjo<br>
-          Jessica Kahn<br>
-          Justin Smith<br>
-          Kaiping Lu<br>
-          Kiana Pandit<br>
-          Liyufei Meng<br>
-          Mandy Chen<br>
-          Maria Isho<br>
-          Marisa Kramer<br>
-          Michael Cui<br>
-          Nathan Vanderweide<br>
-          Nicholas Coles<br>
-          Nick Lin<br>
-          Nick Mathew<br>
-          Prosper Waldmann
+        <p class="class-columns">
+            Eric Pengili<br>
+            Eric Yuan<br>
+            Erin Lee<br>
+            Ethan Marshall<br>
+            Ethan McKean<br>
+            Galen Mui<br>
+            Gerrard Choe<br>
+            Grace Chen<br>
+            Grace Mason<br>
+            Han Zhang<br>
+            Harry Jung<br>
+            Isabella Yoon<br>
+            Jane Nguyen<br>
+            Jasmine Tedjo<br>
+            Jessica Kahn<br>
+            Joshua Wu<br>
+            Jovan Yap<br>
+            Juana Uribe<br>
+            Justin Smith<br>
+            Justin Yang<br>
+            Kaiping Lu<br>
+            Leah Salomon<br>
+            Liyufei Meng<br>
+            Mandy Chen
+          </p>
         </p>
-        <p style="color: #BDE595;
-        font-family: Rubik;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 129%; /* 30.96px */
-        letter-spacing: 0.48px;">
-          Rahul Giridhar<br>
-          Rhea Uppal<br>
-          Robert Fleur<br>
-          Samira Marquez<br>
-          Satyak Khare<br>
-          Shriya Kethireddy<br>
-          Sunny Xu<br>
-          Tanya Haque<br>
-          Tarjene Begum<br>
-          Tia Liu<br>
-          Yao An Yang<br>
-          Yukino Sakai
-        </p>
+        <p class="class-columns">
+            Maria Isho<br>
+            Marisa Kramer<br>
+            Michael Cui<br>
+            Nathan Vanderweide<br>
+            Nicholas Choi<br>
+            Nicholas Coles<br>
+            Nicholas Mathew<br>
+            Nick Lin<br>
+            Nicky Nguyen<br>
+            Rahul Giridhar<br>
+            Richard Feng<br>
+            Riya Dev<br>
+            Robert Fleur<br>
+            Samira Marquez<br>
+            Satyak khare<br>
+            Seth Hyslop<br>
+            Shriya Kethireddy<br>
+            Sunny Xu<br>
+            Tajrene Begum<br>
+            Tanya Haque<br>
+            Tia Liu<br>
+            Trisha Maturi<br>
+            Vanessa Lee<br>
+            Yukino Sakai
+          </p>
       </div>
+
     </div>
   </section>
 
   <!-- section 5 -->
-  <section class="section5">
+  <section class=" section5">
     <div style="padding-top: 100px;
-    margin: auto;
-    width: 659px;
-    height: 92px;
-    flex-shrink: 0;
     color: #071A17;
     font-family: Rubik;
     font-size: 48px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 129%; /* 61.92px */
-    letter-spacing: -0.24px;">
+    padding-bottom: 70px;
+    text-align: center;">
       frequently asked questions
     </div>
     <div id="faq">
       <ul>
-        <li style="border-radius: 18px; background-color: #5F966E66; font-family: Rubik;">
+        <li class="faq-box">
           <input type="checkbox" checked>
-          <i></i>
+          <!-- <i></i> -->
           <h2>how do i join?</h2>
           <p>see the “rush” section for more details.</p>
         </li>
-        <li style="border-radius: 18px; background-color: #5F966E66; font-family: Rubik;">
+        <li class="faq-box">
           <input type="checkbox" checked>
-          <i></i>
+          <!-- <i></i> -->
           <h2>how is a tech frat different from a social frat?</h2>
-          <p>The difference between professional frats and social frats typically is the focus on professional development as well as the absence of a shared living space. In other words, unlike your typical frat or sorority on campus, Brothers in Zeta Pi are not required to live together in a house. Although there is a strong emphasis of community and brotherhood in Zeta Pi, membership aims to aid you in your professional and academic career instead of potentially distracting from it. Most events are completely optional and only exist for the benefit of the brothers.</p>
+          <p>The difference between professional frats and social frats typically is the focus on professional
+            development as well as the absence of a shared living space. In other words, unlike your typical frat or
+            sorority on campus, Brothers in Zeta Pi are not required to live together in a house. Although there is
+            a
+            strong emphasis of community and brotherhood in Zeta Pi, membership aims to aid you in your professional
+            and
+            academic career instead of potentially distracting from it. Most events are completely optional and only
+            exist for the benefit of the brothers.</p>
         </li>
-        <li style="border-radius: 18px; background-color: #5F966E66; font-family: Rubik;">
+        <li class="faq-box">
           <input type="checkbox" checked>
-          <i></i>
+          <!-- <i></i> -->
           <h2>how do i join a committee?</h2>
-          <p>Any brother can join a committee at any time during the semester! To become a member, fill out the google form linked below. Elections for committee heads are held every year before winter break. Unfortunately, pledges are not allowed to join a committee or run for a committee head position until they are initiated as a brother.</p>
+          <p>Any brother can join a committee at any time during the semester! To become a member, fill out the
+            google
+            form linked below. Elections for committee heads are held every year before winter break. Unfortunately,
+            pledges are not allowed to join a committee or run for a committee head position until they are
+            initiated
+            as
+            a brother.</p>
         </li>
-        <li style="border-radius: 18px; background-color: #5F966E66; font-family: Rubik;">
+        <li class="faq-box">
           <input type="checkbox" checked>
-          <i></i>
+          <!-- <i></i> -->
           <h2>what is a big/little mentorship?</h2>
-          <p>Big/little mentorship pairs less experienced "littles" with more experienced, older "bigs" that act as mentors to help guide brothers both professionally and academically. Bigs act as a safety net for their littles and help them assimilate into the frat after their initiation. Big/little reveals take place after pledge initiation each semester, and are based on the connections made between pledges and brothers during the pledging process.</p>
+          <p>Big/little mentorship pairs less experienced "littles" with more experienced, older "bigs" that act as
+            mentors to help guide brothers both professionally and academically. Bigs act as a safety net for their
+            littles and help them assimilate into the frat after their initiation. Big/little reveals take place
+            after
+            pledge initiation each semester, and are based on the connections made between pledges and brothers
+            during
+            the pledging process.</p>
         </li>
-        <li style="border-radius: 18px; background-color: #5F966E66; font-family: Rubik;">
+        <li class="faq-box">
           <input type="checkbox" checked>
-          <i></i>
+          <!-- <i></i> -->
           <h2>how much of a time commitment is being a brother?</h2>
-          <p>The answer to this question entirely depends on you! Any member of the Exec Board must attend two meetings a week, so the time commitment is fairly high. Members of other committees are highly encouraged to attend their weekly committee meeting, and brothers who are not members of any committee are not required to attend any meetings. This being said, every brother must attend at least 10 events or meetings a semester to retain standing, so the baseline time commitment is about an hour a week.</p>
+          <p>The answer to this question entirely depends on you! Any member of the Exec Board must attend two
+            meetings
+            a week, so the time commitment is fairly high. Members of other committees are highly encouraged to
+            attend
+            their weekly committee meeting, and brothers who are not members of any committee are not required to
+            attend
+            any meetings. This being said, every brother must attend at least 10 events or meetings a semester to
+            retain
+            standing, so the baseline time commitment is about an hour a week.</p>
         </li>
       </ul>
     </div>
     <script>
       const checkboxes = document.querySelectorAll('#faq input[type="checkbox"]');
-    
+
       checkboxes.forEach(checkbox => {
         checkbox.addEventListener('change', () => {
           const li = checkbox.parentNode;
@@ -257,8 +380,7 @@
         });
       });
     </script>
-
-    <script>
+    <!-- <script>
       var navLinks = document.getElementById("navLinks");
       function showMenu() {
         navLinks.style.right = "0";
@@ -266,7 +388,8 @@
       function hideMenu() {
         navLinks.style.right = "-200px";
       }
-    </script>
+    </script> -->
+
 </body>
 
 </html>

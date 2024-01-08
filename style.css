@@ -74,11 +74,8 @@ nav {
 } */
 
 .text-box h1 {
-  width: 1044px;
-  height: 205px;
-  left: 172px;
-  top: 176px;
-  position: absolute;
+  padding-left: 10%;
+  position: relative;
   color: #98E44E;
   font-size: 150px;
   font-family: Rubik;
@@ -88,11 +85,9 @@ nav {
 }
 
 .text-box p {
-  width: 603px;
-  height: 121px;
-  left: 172px;
-  top: 367px;
-  position: absolute;
+  padding-left: 10%;
+  position: relative;
+  margin-bottom: 1%;
   color: #98E44E;
   font-size: 32px;
   font-family: "Signifika", "PT Sans", Calibri, Tahoma, sans-serif;
@@ -107,15 +102,13 @@ nav {
   color: #2A441E;
   background-color: #BEE498;
   text-align: center;
-  width: 378px;
-  height: 98px;
-  left: 172px;
-  top: 526px;
+  left: 10%;
+  padding: 1% 3% 1% 3%;
   font-size: 28px;
   font-weight: 700;
   font-family: Rubik;
   word-wrap: break-word;
-  position: absolute;
+  position: relative;
   cursor: pointer;
   border-radius: 80px;
 }
@@ -133,9 +126,10 @@ nav {
 }
 
 .dialoguebox {
-  position: absolute;
-  text-align: center;
-  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 /* section 3 */
@@ -146,16 +140,13 @@ nav {
 }
 
 .heading {
-  width: 926px;
-  height: 153px;
+  margin-left: 10%;
   color: #09211D;
-  font-size: 128px;
+  font-size: clamp(1rem, 15vw, 8rem);
   font-family: Rubik;
   font-weight: 500;
   letter-spacing: 3.84px;
   word-wrap: break-word;
-  left: 2000px;
-  top: 17.50px;
 }
 
 .section4 {
@@ -348,9 +339,6 @@ nav {
   margin: 0 15px;
 }
 
-
-
-
 .no-border {
   border: none !important;
 }
@@ -441,115 +429,6 @@ nav {
   position: static;
 }
 
-.how-do-i-join {
-  color: #bee497;
-  text-align: left;
-  font: 700 40px "Rubik", sans-serif;
-  position: absolute;
-  left: 231px;
-  top: 296px;
-  width: 620.39px;
-  height: 60px;
-}
-
-.rush-dets {
-  color: #ffffff;
-  text-align: left;
-  font: 400 24px/129% "Open Sans", sans-serif;
-  position: absolute;
-  left: 231px;
-  top: 350px;
-  width: 970.69px;
-  height: 201px;
-}
-
-.how-is-a-tech-frat-different-from-a-social-frat {
-  color: #bee497;
-  text-align: left;
-  font: 700 40px "Rubik", sans-serif;
-  position: absolute;
-  left: 231px;
-  top: 453px;
-  width: 921.96px;
-  height: 60px;
-}
-
-.how-do-i-join-a-committee {
-  color: #bee497;
-  text-align: left;
-  font: 700 40px "Rubik", sans-serif;
-  position: absolute;
-  left: 231px;
-  top: 790px;
-  width: 620.39px;
-  height: 60px;
-}
-
-.any-brother-can-join-a-committee-at-any-time-during-the-semester-to-become-a-member-fill-out-the-google-form-linked-below-elections-for-committee-heads-are-held-every-year-before-winter-break-unfortunately-pledges-are-not-allowed-to-join-a-committee-or-run-for-a-committee-head-position-until-they-are-initiated-as-a-brother {
-  color: #ffffff;
-  text-align: left;
-  font: 400 24px/129% "Open Sans", sans-serif;
-  position: absolute;
-  left: 231px;
-  top: 850px;
-  width: 970.69px;
-  height: 141px;
-}
-
-.what-is-a-big-little-mentorship {
-  color: #bee497;
-  text-align: left;
-  font: 700 40px "Rubik", sans-serif;
-  position: absolute;
-  left: 231px;
-  top: 1047px;
-  height: 60px;
-}
-
-.big-little-mentorship-pairs-less-experienced-littles-with-more-experienced-older-bigs-that-act-as-mentors-to-help-guide-brothers-both-professionally-and-academically-bigs-act-as-a-safety-net-for-their-littles-and-help-them-assimilate-into-the-frat-after-their-initiation-big-little-reveals-take-place-after-pledge-initiation-each-semester-and-are-based-on-the-connections-made-between-pledges-and-brothers-during-the-pledging-process {
-  color: #ffffff;
-  text-align: left;
-  font: 400 24px/129% "Open Sans", sans-serif;
-  position: absolute;
-  left: 231px;
-  top: 1107px;
-  width: 970.69px;
-  height: 201px;
-}
-
-.how-much-of-a-time-commitment-is-being-a-brother {
-  color: #bee497;
-  text-align: left;
-  font: 700 40px "Rubik", sans-serif;
-  position: absolute;
-  left: 231px;
-  top: 1364px;
-  width: 1057px;
-  height: 60px;
-}
-
-.the-answer-to-this-question-entirely-depends-on-you-any-member-of-the-exec-board-must-attend-two-meetings-a-week-so-the-time-commitment-is-fairly-high-members-of-other-committees-are-highly-encouraged-to-attend-their-weekly-committee-meeting-and-brothers-who-are-not-members-of-any-committee-are-not-required-to-attend-any-meetings-this-being-said-every-brother-must-attend-at-least-10-events-or-meetings-a-semester-to-retain-standing-so-the-baseline-time-commitment-is-about-an-hour-a-week {
-  color: #ffffff;
-  text-align: left;
-  font: 400 24px/129% "Open Sans", sans-serif;
-  position: absolute;
-  left: 231px;
-  top: 1424px;
-  width: 970.69px;
-  height: 201px;
-}
-
-.the-difference-between-professional-frats-and-social-frats-typically-is-the-focus-on-professional-development-as-well-as-the-absence-of-a-shared-living-space-in-other-words-unlike-your-typical-frat-or-sorority-on-campus-brothers-in-zeta-pi-are-not-required-to-live-together-in-a-house-although-there-is-a-strong-emphasis-of-community-and-brotherhood-in-zeta-pi-membership-aims-to-aid-you-in-your-professional-and-academic-career-instead-of-potentially-distracting-from-it-most-events-are-completely-optional-and-only-exist-for-the-benefit-of-the-brothers {
-  color: #ffffff;
-  text-align: left;
-  font: 400 24px/129% "Open Sans", sans-serif;
-  position: absolute;
-  left: 231px;
-  top: 513px;
-  width: 970.69px;
-  height: 221px;
-}
-
 .section-1,
 .section-1 * {
   box-sizing: border-box;
@@ -567,9 +446,9 @@ nav {
 
 
 /**********************LINK TRANSITION/ANIMATION**********************/
-a { 
+a {
   text-decoration: none !important;
-} 
+}
 
 .hvr-sweep-to-right {
   display: inline-block;
@@ -605,19 +484,23 @@ a {
   transition-timing-function: ease-out;
 }
 
-.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+.hvr-sweep-to-right:hover,
+.hvr-sweep-to-right:focus,
+.hvr-sweep-to-right:active {
   color: black !important;
 
 }
 
-.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+.hvr-sweep-to-right:hover:before,
+.hvr-sweep-to-right:focus:before,
+.hvr-sweep-to-right:active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
 
 /**********************NAVIGATION BAR**********************/
 .home-page-logo {
-  width: 91.71px; 
+  width: 91.71px;
   height: 80px;
 }
 
@@ -638,8 +521,8 @@ a {
   color: #98E44E;
   font-size: 32px;
   margin-right: 10px;
-  width:100%;
-  height:100%
+  width: 100%;
+  height: 100%
 }
 
 .Li:hover {
@@ -655,12 +538,143 @@ nav .fa {
 }
 
 
-@media(max-width: 700px) {
-  .text-box h1 {
-    font-size: 20px;
+.diag {
+  max-width: 90%;
+  display: inline;
+  align-content: center;
+  position: relative;
+  margin-top: 5%;
+  z-index: 1;
+}
+
+.mouse {
+  z-index: 1;
+  left: 595px;
+  top: 673.38px;
+  position: absolute;
+}
+
+.diag-mobile {
+  display: none;
+}
+
+.pillars {
+  display: inline;
+  max-width: 100%;
+  align-content: center;
+  padding-top: 2%;
+}
+
+.pillars-mobile {
+  display: none;
+  height: 20%;
+  width: 100%;
+}
+
+.pillar-rectangle {
+  background-color: #00261c;
+  border-radius: 10px;
+  padding: 5%;
+  text-align: center;
+  color: #BEE498;
+  font-weight: 600;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  width: 75%;
+  margin-top: 3%;
+}
+
+.diag-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  color: #071916;
+  font-size: 38px;
+  font-family: Rubik;
+  font-weight: 400;
+  line-height: 150%;
+  word-wrap: break-word;
+}
+
+.class-columns {
+  color: #BDE595;
+  font-family: Rubik;
+  font-size: clamp(1rem, 2rem, 2rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 129%;
+  padding-left: 5%;
+}
+
+.column-container {
+  width: 100%;
+  column-count: 3;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+@media(max-width: 800px) {
+  .column-container {
+    column-count: 1;
   }
 
-  .nav-links ul li {
+  .text-box h1 {
+    font-size: 75px;
+    padding-left: 10%;
+  }
+
+  .text-box p {
+    font-size: 1.8rem;
+    padding-left: 10%;
+    margin-bottom: 2%;
+    width: 100%;
+  }
+
+  .hero-btn {
+    padding: 2% 2% 2% 2%;
+  }
+
+  .pillars {
+    display: none;
+  }
+
+  .pillars-mobile {
+    display: inline;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .diag-mobile {
+    margin-top: 5%;
+    display: inline;
+  }
+
+  .diag {
+    display: none;
+  }
+
+  .diag-text {
+    width: 75%;
+    left: 15%;
+    top: 15%;
+    position: absolute;
+    color: #071916;
+    font-size: 1.5rem;
+    font-family: Rubik;
+    font-weight: 400;
+    line-height: 100%;
+    word-wrap: break-word;
+  }
+
+
+  /* .nav-links ul li {
     display: block;
   }
 
@@ -673,7 +687,7 @@ nav .fa {
     right: 0;
     text-align: left;
     z-index: 2;
-  }
+  } */
 }
 
 /**********************PAGE HEADER**********************/
@@ -690,13 +704,14 @@ nav .fa {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  text-align: center; 
+  text-align: center;
   letter-spacing: -1.92px;
 }
 
 /**********************RUSH PAGE**********************/
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700);
+
 body {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1em;
@@ -731,6 +746,7 @@ body {
 .timeline-event {
   position: relative;
 }
+
 .timeline-event:hover .timeline-event-icon {
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
@@ -738,6 +754,7 @@ body {
   transform: rotate(-45deg);
   background-color: #B2FF63;
 }
+
 .timeline-event:hover .timeline-event-thumbnail {
   -moz-box-shadow: inset 40em 0 0 0 #B2FF63;
   -webkit-box-shadow: inset 40em 0 0 0 #B2FF63;
@@ -751,19 +768,23 @@ body {
   left: 4em;
   width: 80%;
 }
+
 .timeline-event-copy h2 {
   font-size: 1.5em;
   color: white;
 }
+
 .timeline-event-copy h4 {
   font-size: 1.2em;
   color: white;
   margin-bottom: 1.2em;
 }
+
 .timeline-event-copy strong {
   font-weight: 700;
 
 }
+
 .timeline-event-copy p:not(.timeline-event-thumbnail) {
   padding-bottom: 1.2em;
   color: white;
@@ -814,7 +835,7 @@ body {
   padding-top: 3vw;
   justify-content: flex-start;
   align-items: center;
-  display:flex;
+  display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-evenly;
@@ -822,9 +843,9 @@ body {
 
 .rush-segment {
   padding-bottom: 2vw;
-  width: 80%; 
-  margin-left: 10%; 
-  margin-right: 10%; 
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .rush-text h3 {
@@ -858,7 +879,7 @@ body {
   padding-bottom: 3vw;
   justify-content: center;
   align-items: center;
-  display:flex;
+  display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-evenly;
@@ -871,7 +892,7 @@ body {
   flex-direction: column;
   max-width: 70vw;
   justify-content: flex-start;
-  padding-bottom: 10vw;  
+  padding-bottom: 10vw;
 }
 
 .contact-general h1 {
@@ -900,7 +921,7 @@ body {
   flex-direction: row;
   max-width: 70vw;
   align-items: center;
-  padding-bottom: 2vw; 
+  padding-bottom: 2vw;
 }
 
 .contact-reminder p {
@@ -915,6 +936,7 @@ body {
 .contact-reminder a {
   color: #0d6efd !important;
 }
+
 /**********************FAQ PAGE**********************/
 .faq-details {
   background-color: #09211D;
@@ -923,7 +945,7 @@ body {
   padding-bottom: 3vw;
   justify-content: center;
   align-items: center;
-  display:flex;
+  display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-evenly;
@@ -931,9 +953,9 @@ body {
 
 .question {
   padding-bottom: 2vw;
-  width: 80%; 
-  margin-left: 10%; 
-  margin-right: 10%; 
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .question-text h3 {
@@ -954,7 +976,8 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 129%;
-  text-align: left; /* Set text-align to left */
+  text-align: left;
+  /* Set text-align to left */
 }
 
 /**********************COMMITTEES PAGE**********************/
@@ -966,9 +989,17 @@ body {
   justify-content: space-evenly;
 }
 
+.committee:hover {
+  opacity: 1.0;
+}
 
-
-
+.committee img {
+  width: 15vw;
+  height: 15vw;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 .committee-details {
   background-color: #BEE497;
@@ -977,7 +1008,7 @@ body {
   padding-bottom: 3vw;
   justify-content: center;
   align-items: center;
-  display:flex;
+  display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-evenly;

@@ -296,6 +296,23 @@ nav {
   /* Adjusted padding value */
 }
 
+.long-eboardName {
+  width: 262px;
+  height: 75px;
+  flex-shrink: 0;
+  color: var(--light, #BEE497);
+  text-align: center;
+  font-family: Rubik;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  padding-top: 5px;
+  margin: auto;
+  /* Adjusted padding value */
+}
+
 .eboardTitle {
   color: var(--medium, #98E44E);
   padding-top: 5px;
@@ -945,22 +962,13 @@ body {
   display: flex;
   flex-direction: row;
   max-width: 80vw;
-  opacity: 0.65;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.committee:hover {
-  opacity: 1.0;
-}
 
-.committee img{
-  width: 15vw;
-  height: 15vw;
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+
+
 
 .committee-details {
   background-color: #BEE497;

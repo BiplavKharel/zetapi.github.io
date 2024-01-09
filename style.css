@@ -622,6 +622,9 @@ nav .fa {
   margin-bottom: 10%;
 }
 
+
+
+
 @media(max-width: 800px) {
   .column-container {
     column-count: 1;
@@ -694,6 +697,8 @@ nav .fa {
     line-height: 1.5;
     letter-spacing: 0.05em;
   }
+
+
 
   /* .nav-links ul li {
     display: block;
@@ -1129,12 +1134,9 @@ body {
   max-width: 80vw;
   align-items: center;
   justify-content: space-evenly;
-  opacity: 0.6;
 }
 
-.committee:hover {
-  opacity: 1.0;
-}
+
 
 .committee img {
   width: 15vw;

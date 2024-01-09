@@ -27,6 +27,10 @@
                 width: 250px;
                 height: 1000px;
             }
+
+            .icons {
+                display: none;
+            }
         }
 
         @media screen and (min-width: 1156px) {
@@ -37,11 +41,20 @@
             .checkbox {
                 display: none;
             }
+
+            #socialMedia {
+                display: flex;
+            }
+
+            #socialMedia a {
+                flex: 1;
+            }
         }
     </style>
 </head>
 
 <body style="background-color: #09211D;">
+
     <section class="navBar">
         <nav class="menu--right" role="navigation">
             <a href="index.html" id="logo-link"><img src="images/keycap-logo.png" id="keycap-logo"></a>
@@ -75,7 +88,7 @@
                     <li><a href="rush.html" class="hvr-sweep-to-right">rush</a></li>
                 </ul>
             </div>
-            <!--
+            
         <div class="icons" id="socialMedia">
           <a href="https://www.linkedin.com/company/91309323/admin/feed/posts/" target="_blank"
             style="width:100%;height:100%;"><i class="Li fab fa-linkedin"></i></a>
@@ -83,7 +96,7 @@
               class="Li fab fa-instagram"></i></a>
           <a href="https://www.tiktok.com/@zetapiumich" target="_blank" style="width:100%;height:100%;"><i
               class="Li fab fa-tiktok"></i></a>
-        </div> -->
+        </div> 
             <div class="menuToggle">
                 <input type="checkbox" />
                 <span></span>
@@ -211,31 +224,6 @@
                         </div>
                         <div class="eboardName">Samira Marquez</div>
                         <div class="eboardTitle">Executive Vice President</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="card bg-transparent border-0">
-                    <div class="card-body" style="padding: 20px;"> <!-- Adjusted padding value -->
-                        <div class="eboardHeadshot">
-                            <div class="img__wrap">
-                                <img class="img__img" src="./images/headshots/Liyufei.png" />
-                                <div class="img__description_layer">
-                                    <div class="img__description">
-                                        <div class="img_desc_header">Major:</div>
-                                        <div class="img_desc_body">
-                                            Computer Science
-                                        </div>
-                                        <div class="img_desc_header">Interests:</div>
-                                        <div class="img_desc_body">
-                                            Violin, badminton, games, and AI
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="eboardName">Liyufei Meng</div>
-                        <div class="eboardTitle">Head of Academic Development</div>
                     </div>
                 </div>
             </div>
@@ -414,31 +402,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="card bg-transparent border-0">
-                    <div class="card-body" style="padding: 20px;"> <!-- Adjusted padding value -->
-                        <div class="eboardHeadshot">
-                            <div class="img__wrap">
-                                <img class="img__img" src="./images/headshots/Maria.png" />
-                                <div class="img__description_layer">
-                                    <div class="img__description">
-                                        <div class="img_desc_header">Major:</div>
-                                        <div class="img_desc_body">
-                                            Industrial Operations Engineering
-                                        </div>
-                                        <div class="img_desc_header">Interests:</div>
-                                        <div class="img_desc_body">
-                                            Badminton, oil painting, and pixel art animation
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="eboardName">Nick Lin</div>
-                        <div class="eboardTitle">Head of Marketing</div>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
 
@@ -466,6 +430,10 @@
 
             .page-header h2 {
                 font-size: 45px;
+            }
+
+            .icons {
+                display: none;
             }
         }
     </style>

@@ -44,6 +44,10 @@
         width: 250px;
         height: 1000px;
       }
+
+      .icons {
+                display: none;
+            }
     }
 
     @media screen and (min-width: 1156px) {
@@ -80,6 +84,13 @@
         font-weight: 500;
         word-wrap: break-word;
       }
+      #socialMedia {
+                display: flex;
+            }
+
+            #socialMedia a {
+                flex: 1;
+            }
     }
   </style>
 </head>
@@ -118,7 +129,7 @@
           <li><a href="rush.html" class="hvr-sweep-to-right">rush</a></li>
         </ul>
       </div>
-      <!--
+      
       <div class="icons" id="socialMedia">
         <a href="https://www.linkedin.com/company/91309323/admin/feed/posts/" target="_blank"
           style="width:100%;height:100%;"><i class="Li fab fa-linkedin"></i></a>
@@ -126,7 +137,7 @@
             class="Li fab fa-instagram"></i></a>
         <a href="https://www.tiktok.com/@zetapiumich" target="_blank" style="width:100%;height:100%;"><i
             class="Li fab fa-tiktok"></i></a>
-      </div> -->
+      </div>
       <div class="menuToggle">
         <input type="checkbox" />
         <span></span>
@@ -145,6 +156,7 @@
   </section>
 
   <div class="page-header">
+    <span class="brr"><br><br></span>
     <h2>Contact</h2>
   </div>
 
@@ -171,6 +183,8 @@
       height: 150px;
       position: relative;
     }
+
+
   </style>
   <div class="section-1">
 
@@ -179,7 +193,7 @@
 
       <div class="toppart">
         <span class="toppart-span">Please refer to the FAQ tab to familiarize yourself with general
-          questions about Zeta Pi. If you have any further questions, feel free
+          questions about Zeta Pi. Application information is located under the rush tab.If you have any further questions, feel free
           to email </span><span class="toppart-span2">zetapi-info@umich.edu<br /></span><span
           class="toppart-span3"><br /><br /></span><span class="toppart-span4"><br /><br /></span>
       </div>
@@ -498,9 +512,18 @@
         font: 500 24px "Rubik", sans-serif;
       }
 
+      .brr {
+            display: none;
+        }
 
       @media screen and (max-width: 500px) {
 
+        .brr {
+            display: block;
+        }
+        .page-header h2 {
+          font-size: 50px;
+        }
 
         .content {
           display: flex;

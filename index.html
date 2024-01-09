@@ -20,7 +20,27 @@
 <body>
   <section class="section1">
     <nav style="z-index: 2;">
-      <a href="index.html"><img src="images/keycap-logo.png"></a>
+      <a href="index.html" id="logo-link"><img src="images/keycap-logo.png" id="keycap-logo"></a>
+      <style>
+        #keycap-logo {
+          transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        #keycap-logo.clicked {
+          transform: scale(0.95) translateY(4px);
+          opacity: 0.8;
+        }
+      </style>
+      <script>
+        document.getElementById('logo-link').addEventListener('click', function () {
+          document.getElementById('keycap-logo').classList.add('clicked');
+
+          // Reset the animation after a short delay (200ms in this example)
+          setTimeout(function () {
+            document.getElementById('keycap-logo').classList.remove('clicked');
+          }, 200);
+        });
+      </script>
       <div class="nav-links" id="navLinks" style="z-index: 2;">
         <ul class="center-align">
           <li><a href="index.html"><u>home</u></a></li>
@@ -92,6 +112,20 @@
         }
 
         @media(min-width:800px) and (max-width: 1314px) {
+          .section1 {
+            height: 100%;
+            padding-bottom: 10%;
+          }
+
+          .section2 {
+            height: 100%;
+          }
+
+          .section3 {
+            height: 100%;
+            padding-bottom: 10%;
+          }
+
           .computerimg {
             display: none;
           }
@@ -106,6 +140,21 @@
         }
 
         @media(max-width: 800px) {
+          .section2 {
+            height: 100%;
+          }
+
+          .section3 {
+            height: 100%;
+            padding-bottom: 10%;
+
+          }
+
+          .section1 {
+            height: 100%;
+            padding-bottom: 10%;
+          }
+
           .computerimg {
             display: none;
           }
@@ -206,12 +255,15 @@
           Active
           Brothers<br /></div>
       </div>
-      <div>
-        <img src="./images/alpha-class-images.png" style="max-width: 100%">
+      <div style="display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;">
+        <img src="./images/alpha-class-images.png" style="max-width: 90%; align-content:center; display:flex">
       </div>
       <div class="column-container">
         <p class="class-columns">
-            Aarushi Shah<br>
+          Aarushi Shah<br>
           Adarsh Pettappa<br>
           Aaron Schwarz<br>
           Aleen El-Hindi<br>
@@ -237,58 +289,58 @@
           Emma Cho
         </p>
         <p class="class-columns">
-            Eric Pengili<br>
-            Eric Yuan<br>
-            Erin Lee<br>
-            Ethan Marshall<br>
-            Ethan McKean<br>
-            Galen Mui<br>
-            Gerrard Choe<br>
-            Grace Chen<br>
-            Grace Mason<br>
-            Han Zhang<br>
-            Harry Jung<br>
-            Isabella Yoon<br>
-            Jane Nguyen<br>
-            Jasmine Tedjo<br>
-            Jessica Kahn<br>
-            Joshua Wu<br>
-            Jovan Yap<br>
-            Juana Uribe<br>
-            Justin Smith<br>
-            Justin Yang<br>
-            Kaiping Lu<br>
-            Leah Salomon<br>
-            Liyufei Meng<br>
-            Mandy Chen
-          </p>
+          Eric Pengili<br>
+          Eric Yuan<br>
+          Erin Lee<br>
+          Ethan Marshall<br>
+          Ethan McKean<br>
+          Galen Mui<br>
+          Gerrard Choe<br>
+          Grace Chen<br>
+          Grace Mason<br>
+          Han Zhang<br>
+          Harry Jung<br>
+          Isabella Yoon<br>
+          Jane Nguyen<br>
+          Jasmine Tedjo<br>
+          Jessica Kahn<br>
+          Joshua Wu<br>
+          Jovan Yap<br>
+          Juana Uribe<br>
+          Justin Smith<br>
+          Justin Yang<br>
+          Kaiping Lu<br>
+          Leah Salomon<br>
+          Liyufei Meng<br>
+          Mandy Chen
+        </p>
         </p>
         <p class="class-columns">
-            Maria Isho<br>
-            Marisa Kramer<br>
-            Michael Cui<br>
-            Nathan Vanderweide<br>
-            Nicholas Choi<br>
-            Nicholas Coles<br>
-            Nicholas Mathew<br>
-            Nick Lin<br>
-            Nicky Nguyen<br>
-            Rahul Giridhar<br>
-            Richard Feng<br>
-            Riya Dev<br>
-            Robert Fleur<br>
-            Samira Marquez<br>
-            Satyak khare<br>
-            Seth Hyslop<br>
-            Shriya Kethireddy<br>
-            Sunny Xu<br>
-            Tajrene Begum<br>
-            Tanya Haque<br>
-            Tia Liu<br>
-            Trisha Maturi<br>
-            Vanessa Lee<br>
-            Yukino Sakai
-          </p>
+          Maria Isho<br>
+          Marisa Kramer<br>
+          Michael Cui<br>
+          Nathan Vanderweide<br>
+          Nicholas Choi<br>
+          Nicholas Coles<br>
+          Nicholas Mathew<br>
+          Nick Lin<br>
+          Nicky Nguyen<br>
+          Rahul Giridhar<br>
+          Richard Feng<br>
+          Riya Dev<br>
+          Robert Fleur<br>
+          Samira Marquez<br>
+          Satyak khare<br>
+          Seth Hyslop<br>
+          Shriya Kethireddy<br>
+          Sunny Xu<br>
+          Tajrene Begum<br>
+          Tanya Haque<br>
+          Tia Liu<br>
+          Trisha Maturi<br>
+          Vanessa Lee<br>
+          Yukino Sakai
+        </p>
       </div>
 
     </div>

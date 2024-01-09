@@ -44,7 +44,27 @@
 <body style="background-color: #09211D;">
     <section class="navBar">
         <nav class="menu--right" role="navigation">
-            <a href="index.html"><img class="home-page-logo" src="images/keycap-logo.png"></a>
+            <a href="index.html" id="logo-link"><img src="images/keycap-logo.png" id="keycap-logo"></a>
+            <style>
+                #keycap-logo {
+                    transition: transform 0.2s ease, opacity 0.2s ease;
+                }
+
+                #keycap-logo.clicked {
+                    transform: scale(0.95) translateY(4px);
+                    opacity: 0.8;
+                }
+            </style>
+            <script>
+                document.getElementById('logo-link').addEventListener('click', function () {
+                    document.getElementById('keycap-logo').classList.add('clicked');
+
+                    // Reset the animation after a short delay (200ms in this example)
+                    setTimeout(function () {
+                        document.getElementById('keycap-logo').classList.remove('clicked');
+                    }, 200);
+                });
+            </script>
             <div class="nav-links">
                 <ul class="center-alignc">
                     <li><a href="index.html" class="hvr-sweep-to-right">home</a></li>

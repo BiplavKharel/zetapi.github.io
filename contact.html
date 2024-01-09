@@ -1,556 +1,617 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="with=device-width, initial-scale=1.0">
-        <title>Zeta Pi Contact</title>
-        <link rel="icon" href="./images/keycap-logo-dark.png">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="accordion.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Rubik:400,500,400italic,700' rel='stylesheet' type='text/css'>
-        <!--import font awesome icons-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    </head>
-<body style="background-color: #071e1a;">
 
-    <section class="contactNav">
-        <nav style="z-index: 2;">
-         <a href="index.html"><img style="width: 91.71px; height: 80px;" src="images/keycap-logo.png"></a>
-  <div class="nav-links" id="navLinks" style="z-index: 2;">
-      <!-- <i class="fa fa-times" onclick="hideMenu()"></i> -->
-      <ul class="center-alignc">
-          <li><a href="index.html">home</a></li>
-          <li><a href="eboard.html">e-board</a></li>
-          <li><a href="committee.html">committees</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contact.html"><u>contact</u></li>
-          <li><a href="rush.html">rush</a></li>
-      </ul>
+<head>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <title>Zeta Pi Contact</title>
+  <link rel="icon" href="./images/keycap-logo-dark.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="accordion.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Rubik:400,500,400italic,700' rel='stylesheet' type='text/css'>
+  <!--import font awesome icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<html>
+
+<head>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <title>Zeta Pi FAQ</title>
+  <link rel="icon" href="./images/keycap-logo-dark.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Rubik:400,500,400italic,700' rel='stylesheet' type='text/css'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @media screen and (max-width: 1155px) {
+      .nav-links {
+        display: none;
+      }
+
+      .menuItem {
+        width: 250px;
+        height: 1000px;
+      }
+    }
+
+    @media screen and (min-width: 1156px) {
+      .menuToggle {
+        display: none;
+      }
+
+      .checkbox {
+        display: none;
+      }
+
+      .nav-links {
+        flex: 1;
+        text-align: right;
+        z-index: 2;
+      }
+
+      .nav-links ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+      }
+
+      .nav-links ul li a:hover {
+        color: var(--more-neon, #B2FF63);
+      }
+
+      .nav-links ul li a {
+        color: #98E44E;
+        text-decoration: none;
+        font-size: 24px;
+        font-family: "Rubik", "PT Sans", Calibri, Tahoma, sans-serif;
+        font-weight: 500;
+        word-wrap: break-word;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="navBar">
+    <nav class="menu--right" role="navigation">
+      <a href="index.html"><img class="home-page-logo" src="images/keycap-logo.png"></a>
+      <div class="nav-links">
+        <ul class="center-alignc">
+          <li><a href="index.html" class="hvr-sweep-to-right">home</a></li>
+          <li><a href="eboard.html" class="hvr-sweep-to-right">e-board</a></li>
+          <li><a href="committee.html" class="hvr-sweep-to-right">committees</a></li>
+          <li><a href="faq.html" class="hvr-sweep-to-right">FAQ</a></li>
+          <li><a href="contact.html" class="hvr-sweep-to-right"><u>contact</u></a></li>
+          <li><a href="rush.html" class="hvr-sweep-to-right">rush</a></li>
+        </ul>
+      </div>
+      <!--
+      <div class="icons" id="socialMedia">
+        <a href="https://www.linkedin.com/company/91309323/admin/feed/posts/" target="_blank"
+          style="width:100%;height:100%;"><i class="Li fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/zetapi.umich/" target="_blank" style="width:100%;height:100%;"><i
+            class="Li fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@zetapiumich" target="_blank" style="width:100%;height:100%;"><i
+            class="Li fab fa-tiktok"></i></a>
+      </div> -->
+      <div class="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul class="menuItem">
+          <li><a href="index.html" class="hvr-sweep-to-right">home</a></li>
+          <li><a href="eboard.html" class="hvr-sweep-to-right">e-board</a></li>
+          <li><a href="committee.html" class="hvr-sweep-to-right">committees</a></li>
+          <li><a href="faq.html" class="hvr-sweep-to-right">FAQ</a></li>
+          <li><a href="contact.html" class="hvr-sweep-to-right"><u>contact</u></a></li>
+          <li><a href="rush.html" class="hvr-sweep-to-right">rush</a></li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+  <div class="page-header">
+    <h2>Contact</h2>
   </div>
-  <div class="icons" id="socialMedia">
-      <a href="https://www.linkedin.com/company/91309323/admin/feed/posts/" target="_blank" style="width:100%;height:100%;"><i class="Li fab fa-linkedin"></i></a>
-      <a href="https://www.instagram.com/zetapi.umich/" target="_blank" style="width:100%;height:100%;"><i class="Li fab fa-instagram"></i></a>
-      <a href="https://www.tiktok.com/@zetapiumich" target="_blank" style="width:100%;height:100%;"><i class="Li fab fa-tiktok"></i></a>
-  </div>
-  </nav>
-   <style>
-.center-alignc {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-}
 
-.center-alignc li {
-    margin: 0 15px;
-}
-.contactNav,
-.contactNav * {
-box-sizing: border-box;
-}
-.contactNav {
-background: #071e1a;
-width: 100%;
-height: 150px;
-position: relative;
-}
-</style>
-        <div class="section-1">
-            
-            <div class="rectangle-1"></div>
-            <div class="h-1-h-2">
-              <div class="contact">Contact</div>
-              <div class="toppart">
-                <span
-                    class="toppart-span"
-                    >Please refer to the FAQ tab to familiarize yourself with general
-                    questions about Zeta Pi. If you have any further questions, feel free
-                    to email </span
-                  ><span
-                    class="toppart-span2"
-                    >zetapi-info@umich.edu<br /></span
-                  ><span
-                    class="toppart-span3"
-                    ><br /><br /></span
-                  ><span
-                    class="toppart-span4"
-                    ><br /><br /></span
-                >
-              </div>
-            </div>
-            
-            <div class="content">
+  <style>
+    .center-alignc {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+    }
 
-              <div class="general">
-                <div class="general2">
-                  <div class="general3">General</div>
-                </div>
-                <div class="email">
-                  <div class="zeta-pi-email-zetapi-info-umich-edu">
-                    <span
-                      ><span class="zeta-pi-email-zetapi-info-umich-edu-span"
-                        >Zeta Pi Email<br /></span
-                      ><span class="zeta-pi-email-zetapi-info-umich-edu-span2"
-                        >zetapi-info@umich.edu</span
-                      ></span
-                    >
-                  </div>
-                </div>
-              </div>
+    .center-alignc li {
+      margin: 0 15px;
+    }
 
-              <div class="social-media">
-                <div class="general2">
-                  <div class="social-media2">Social Media</div>
-                </div>
-                <div class="social-media3">
-                    <a href="https://www.linkedin.com/company/91309323/admin/feed/posts/"><img class="li" src="images/licontact.png" /></a>
-                    <a href="https://www.instagram.com/zetapi.umich/"><img class="insta" src="images/instacont.png" /> </a>
-                    <a href="https://www.tiktok.com/@zetapiumich"><img class="tiktok-1" src="images/tiktokcont.png"/> </a>
-                </div>
-              </div>
-              <div class="eboard">
-                <div class="property-1-e-board">
-                  <div class="e-board">E-Board</div>
-                </div>
-                <div
-                  class="property-1-names-list"
-                >
-                  <div
-                    class="names-list"
-                  >
-                    <span
-                      ><span
-                        class="name-elm"
-                        >Alexandra Enders - President<br /></span
-                      ><span
-                        class="email-elm"
-                        >endersa@umich.edu<br /><br /></span
-                      ><span
-                        class="name-elm"
-                        >Samira Marquez - Vice President<br /></span
-                      ><span
-                        class="email-elm"
-                        >smarquez@umich.edu<br /><br /></span
-                      ><span
-                        class="name-elm"
-                        >Diego Viramontes Vargas - Head of Social<br /></span
-                      ><span
-                        class="email-elm"
-                        >diegova@umich.edu<br /><br /></span
-                      ><span
-                        class="name-elm"
-                        >Michael Cui - Head of Social Media<br /></span
-                      ><span
-                        class="email-elm"
-                        >mdcui@umich.edu<br /><br /></span
-                      ><span
-                        class="name-elm"
-                        >Grace Chen - Head of Recruitment & Membership<br /></span
-                      ><span
-                        class="email-elm"
-                        >graceche@umich.edu<br /><br /></span
-                      ><span
-                        class="name-elm"
-                        >Nick Lin - Head of Marketing<br /></span
-                      ><span
-                        class="email-elm"
-                        >linick@umich.edu<br /><br /></span
-                      ><span
-                        class="name-elm"
-                        >Amogh Madireddi - Head of Academic Development<br /></span
-                      ><span
-                        class="email-elm"
-                        >amoghmm@umich.edu<br /><br /></span
-                      ><span
-                        class="name-elm"
-                        >Andrew Zhao - Head of Professional Development<br /></span
-                      ><span
-                        class="email-elm"
-                        >andzhao@umich.edu<br /><br /></span
-                      ><span
-                        class="name-elm"
-                        >Tingqi Liu - Head of Fundraising<br /></span
-                      ><span
-                        class="email-elm"
-                        >tingqil@umich.edu<br /><br /></span
-                      ><span
-                        class="name-elm"
-                        >Amey Krishna - Head of Ethics<br /></span
-                      ><span
-                        class="email-elm"
-                        >amekrish@umich.edu<br /><br /></span
-                      ><span
-                      class="name-elm"
-                      >Eric Yuan - Head of Tech<br /></span
-                    ><span
-                      class="email-elm"
-                      >ericyuan@umich.edu</span
-                    ></span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
+    .contactNav,
+    .contactNav * {
+      box-sizing: border-box;
+    }
 
-<style>
-                
-.section-1, .section-1 * {
-  box-sizing: border-box;
-}
-.section-1 {
-  background: #071e1a;
-  width: 100%;
-  height: 200px;
-  position: relative;
-}
-.rectangle-1 {
-  background: #bee497;
-  width: 100%;
-  height: 2200px;
-  position: absolute;
-  top: 350px;
-}
-.h-1-h-2 {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  align-items: center;
-  justify-content: flex-start;
-  position: absolute;
-  left: 14%;
-  width: 72%;
-  top: 50px;
-}
-.contact {
-  color: var(--more-neon, #b2ff63);
-  text-align: left;
-  font: 700 64px "Rubik", sans-serif;
-  position: relative;
-}
-.toppart {
-  text-align: left;
-  position: relative;
-  width: 100%;
-  height: 107px;
-}
-.toppart-span {
-  color: #ffffff;
-  font: 500 30px "Rubik", sans-serif;
+    .contactNav {
+      background: #071e1a;
+      width: 100%;
+      height: 150px;
+      position: relative;
+    }
+  </style>
+  <div class="section-1">
 
-}
-.toppart-span2 {
-  color: #bee497;
-  font: 500 30px "Rubik", sans-serif;
-}
-.toppart-span3 {
-  color: #2a6133;
-  font: 500 24px "Rubik", sans-serif;
-}
-.toppart-span4 {
-  color: #09211d;
-  font: 500 28px "Rubik", sans-serif;
-}
-.content {
-  display: flex;
-  flex-direction: column;
-  gap: 23px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  width: 50%;
-  left: 25%;
-  top: 422px;
-}
-.general {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  width: 100%;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
-}
-.general2 {
-  flex-shrink: 0;
-  width: 100%;
-  height: 60px;
-  position: relative;
-}
-.general3 {
-  color: #09211d;
-  text-align: left;
-  font: 700 40px "Rubik", sans-serif;
-  text-decoration: underline;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 60px;
-}
-.email {
-  flex-shrink: 0;
-  width: 100%;
-  height: 63px;
-  position: relative;
-}
-.zeta-pi-email-zetapi-info-umich-edu {
-  text-align: left;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 4.64px;
-}
-.zeta-pi-email-zetapi-info-umich-edu-span {
-  color: #09211d;
-  font: 500 28px "Rubik", sans-serif;
-}
-.zeta-pi-email-zetapi-info-umich-edu-span2 {
-  color: #2a6133;
-  font: 500 24px "Rubik", sans-serif;
-}
-.social-media {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  width: 100%;
-  height: 245px;
-  position: relative;
-  overflow: hidden;
-}
-.social-media2 {
-  color: #09211d;
-  text-align: left;
-  font: 700 40px "Rubik", sans-serif;
-  text-decoration: underline;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 60px;
-}
-.social-media3 {
-  flex-shrink: 0;
-  width: 100%;
-  height: 152px;
-  position: relative;
-}
-.li {
-  width: 9.8vw;
-  height: 9.8vw;
-  position: absolute;
-  left: 0;
-  top: 2px;
-  max-width: 156px; 
-  max-height: 156px;
-}
-.insta {
-  width: 9.8vw;
-  height: 9.8vw;
-  position: absolute;
-  left: 26.6%;
-  top: 2px;
-  max-width: 156px; 
-  max-height: 156px;
-}
-.tiktok-1 {
-  width: 9.8vw;
-  height: 9.8vw;
-  position: absolute;
-  top: 2px;
-  left: 53.2%;
-  max-width: 156px; 
-  max-height: 156px;
-}
-.eboard {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  width: 100%;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  height: 1200px;
-  position: relative;
+    <div class="rectangle-1"></div>
+    <div class="h-1-h-2">
 
-}
-.property-1-e-board {
-  flex-shrink: 0;
-  width: 100%;
-  height: 60px;
-  position: relative;
-}
-.e-board {
-  color: #09211d;
-  text-align: left;
-  font: 700 40px "Rubik", sans-serif;
-  text-decoration: underline;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 60px;
-}
-.property-1-names-list {
-  flex-shrink: 0;
-  width: 100%;
-  height: 1000px;
-  position: relative;
-}
-.names-list {
-  text-align: left;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 855px;
-}
-.name-elm {
-  color: #09211d;
-  font: 500 28px "Rubik", sans-serif;
-}
-.email-elm {
-  color: #2a6133;
-  font: 500 24px "Rubik", sans-serif;
-}
+      <div class="toppart">
+        <span class="toppart-span">Please refer to the FAQ tab to familiarize yourself with general
+          questions about Zeta Pi. If you have any further questions, feel free
+          to email </span><span class="toppart-span2">zetapi-info@umich.edu<br /></span><span
+          class="toppart-span3"><br /><br /></span><span class="toppart-span4"><br /><br /></span>
+      </div>
+    </div>
 
+    <div class="content">
 
-@media screen and (max-width: 500px) {
-       
+      <div class="general">
+        <div class="general2">
+          <div class="general3">General</div>
+        </div>
+        <div class="email">
+          <div class="zeta-pi-email-zetapi-info-umich-edu">
+            <span><span class="zeta-pi-email-zetapi-info-umich-edu-span">Zeta Pi Email<br /></span><span
+                class="zeta-pi-email-zetapi-info-umich-edu-span2">zetapi-info@umich.edu</span></span>
+          </div>
+        </div>
+      </div>
 
-    .content {
+      <div class="social-media">
+        <div class="general2">
+          <div class="social-media2">Social Media</div>
+        </div>
+        <div class="social-media3">
+          <a href="https://www.linkedin.com/company/91309323/admin/feed/posts/"><img class="li"
+              src="images/licontact.png" /></a>
+          <a href="https://www.instagram.com/zetapi.umich/"><img class="insta" src="images/instacont.png" /> </a>
+          <a href="https://www.tiktok.com/@zetapiumich"><img class="tiktok-1" src="images/tiktokcont.png" /> </a>
+        </div>
+      </div>
+      <div class="eboard">
+        <div class="property-1-e-board">
+          <div class="e-board">E-Board</div>
+        </div>
+        <div class="property-1-names-list">
+          <div class="names-list">
+            <span><span class="name-elm">Alexandra Enders - President<br /></span><span
+                class="email-elm">endersa@umich.edu<br /><br /></span><span class="name-elm">Samira Marquez - Vice
+                President<br /></span><span class="email-elm">smarquez@umich.edu<br /><br /></span><span
+                class="name-elm">Diego Viramontes Vargas - Head of Social<br /></span><span
+                class="email-elm">diegova@umich.edu<br /><br /></span><span class="name-elm">Michael Cui - Head of
+                Social Media<br /></span><span class="email-elm">mdcui@umich.edu<br /><br /></span><span
+                class="name-elm">Grace Chen - Head of Recruitment & Membership<br /></span><span
+                class="email-elm">graceche@umich.edu<br /><br /></span><span class="name-elm">Nick Lin - Head of
+                Marketing<br /></span><span class="email-elm">linick@umich.edu<br /><br /></span><span
+                class="name-elm">Amogh Madireddi - Head of Academic Development<br /></span><span
+                class="email-elm">amoghmm@umich.edu<br /><br /></span><span class="name-elm">Andrew Zhao - Head of
+                Professional Development<br /></span><span class="email-elm">andzhao@umich.edu<br /><br /></span><span
+                class="name-elm">Tingqi Liu - Head of Fundraising<br /></span><span
+                class="email-elm">tingqil@umich.edu<br /><br /></span><span class="name-elm">Amey Krishna - Head of
+                Ethics<br /></span><span class="email-elm">amekrish@umich.edu<br /><br /></span><span
+                class="name-elm">Eric Yuan - Head of Tech<br /></span><span
+                class="email-elm">ericyuan@umich.edu</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .section-1,
+      .section-1 * {
+        box-sizing: border-box;
+      }
+
+      .section-1 {
+        background: #09211D;
+        width: 100%;
+        height: 400px;
+        position: relative;
+      }
+
+      .rectangle-1 {
+        background: #bee497;
+        width: 100%;
+        height: 2200px;
+        position: absolute;
+        top: 350px;
+      }
+
+      .h-1-h-2 {
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 24px;
+        align-items: center;
+        justify-content: flex-start;
+        position: absolute;
+        left: 14%;
+        width: 72%;
+        top: 50px;
+      }
+
+      .contact {
+        color: var(--more-neon, #b2ff63);
+        text-align: left;
+        font: 700 64px "Rubik", sans-serif;
+        position: relative;
+      }
+
+      .toppart {
+        text-align: left;
+        position: relative;
+        width: 100%;
+        height: 107px;
+      }
+
+      .toppart-span {
+        color: #ffffff;
+        font: 500 30px "Rubik", sans-serif;
+
+      }
+
+      .toppart-span2 {
+        color: #bee497;
+        font: 500 30px "Rubik", sans-serif;
+      }
+
+      .toppart-span3 {
+        color: #2a6133;
+        font: 500 24px "Rubik", sans-serif;
+      }
+
+      .toppart-span4 {
+        color: #09211d;
+        font: 500 28px "Rubik", sans-serif;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
         align-items: flex-start;
         justify-content: flex-start;
         position: absolute;
-        width: 70%;
-        left: 15%;
-        top: 380px;
-    }
+        width: 50%;
+        left: 25%;
+        top: 422px;
+      }
 
+      .general {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-shrink: 0;
+        position: relative;
+        overflow: hidden;
+      }
 
- 
-    .toppart-span {
-        color: #ffffff;
-        font: 500 18px "Rubik", sans-serif;
-
-    }
-    .toppart-span2 {
-        color: #bee497;
-        font: 500 18px "Rubik", sans-serif;
-    }
-
-    .general2 {
+      .general2 {
         flex-shrink: 0;
         width: 100%;
-        height: 40px;
+        height: 60px;
         position: relative;
-    }
+      }
 
-    .general3 {
-        font: 700 30px "Rubik", sans-serif;
-        height: 25px;
-    }
-    .email {
-    flex-shrink: 0;
-    width: 100%;
-    height: 63px;
-    position: relative;
-    }
-    .zeta-pi-email-zetapi-info-umich-edu {
-    text-align: left;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 4.64px;
-    }
-
-    .zeta-pi-email-zetapi-info-umich-edu-span {
+      .general3 {
         color: #09211d;
-        font: 500 20px "Rubik", sans-serif;
-    }
-    .zeta-pi-email-zetapi-info-umich-edu-span2 {
-        color: #2a6133;
-        font: 500 16px "Rubik", sans-serif;
-    }
-
-    .social-media {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  width: 100%;
-  height: 140px;
-  position: relative;
-  overflow: hidden;
-}
-
-    .social-media2 {
-        font: 700 25px "Rubik", sans-serif;
-        height: 40px;
-    }
-
-    .social-media3 {
-        height: 80px;
+        text-align: left;
+        font: 700 40px "Rubik", sans-serif;
+        text-decoration: underline;
         position: absolute;
-        top: 85px;
-    }
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 60px;
+      }
 
-    .e-board {
-  color: #09211d;
-  text-align: left;
-  font: 700 25px "Rubik", sans-serif;
-  text-decoration: underline;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 60px;
-}
-.property-1-names-list {
-  flex-shrink: 0;
-  width: 100%;
-  height: 1000px;
-  position: relative;
-}
-.names-list {
-  text-align: left;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 855px;
-}
-.name-elm {
-  color: #09211d;
-  font: 500 20px "Rubik", sans-serif;
-}
-.email-elm {
-  color: #2a6133;
-  font: 500 16px "Rubik", sans-serif;
-}
+      .email {
+        flex-shrink: 0;
+        width: 100%;
+        height: 63px;
+        position: relative;
+      }
+
+      .zeta-pi-email-zetapi-info-umich-edu {
+        text-align: left;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 4.64px;
+      }
+
+      .zeta-pi-email-zetapi-info-umich-edu-span {
+        color: #09211d;
+        font: 500 28px "Rubik", sans-serif;
+      }
+
+      .zeta-pi-email-zetapi-info-umich-edu-span2 {
+        color: #2a6133;
+        font: 500 24px "Rubik", sans-serif;
+      }
+
+      .social-media {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-shrink: 0;
+        width: 100%;
+        height: 245px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .social-media2 {
+        color: #09211d;
+        text-align: left;
+        font: 700 40px "Rubik", sans-serif;
+        text-decoration: underline;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 60px;
+      }
+
+      .social-media3 {
+        flex-shrink: 0;
+        width: 100%;
+        height: 152px;
+        position: relative;
+      }
+
+      .li {
+        width: 9.8vw;
+        height: 9.8vw;
+        position: absolute;
+        left: 0;
+        top: 2px;
+        max-width: 156px;
+        max-height: 156px;
+      }
+
+      .insta {
+        width: 9.8vw;
+        height: 9.8vw;
+        position: absolute;
+        left: 26.6%;
+        top: 2px;
+        max-width: 156px;
+        max-height: 156px;
+      }
+
+      .tiktok-1 {
+        width: 9.8vw;
+        height: 9.8vw;
+        position: absolute;
+        top: 2px;
+        left: 53.2%;
+        max-width: 156px;
+        max-height: 156px;
+      }
+
+      .eboard {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-shrink: 0;
+        height: 1200px;
+        position: relative;
+
+      }
+
+      .property-1-e-board {
+        flex-shrink: 0;
+        width: 100%;
+        height: 60px;
+        position: relative;
+      }
+
+      .e-board {
+        color: #09211d;
+        text-align: left;
+        font: 700 40px "Rubik", sans-serif;
+        text-decoration: underline;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 60px;
+      }
+
+      .property-1-names-list {
+        flex-shrink: 0;
+        width: 100%;
+        height: 1000px;
+        position: relative;
+      }
+
+      .names-list {
+        text-align: left;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 855px;
+      }
+
+      .name-elm {
+        color: #09211d;
+        font: 500 28px "Rubik", sans-serif;
+      }
+
+      .email-elm {
+        color: #2a6133;
+        font: 500 24px "Rubik", sans-serif;
+      }
+
+
+      @media screen and (max-width: 500px) {
+
+
+        .content {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          align-items: flex-start;
+          justify-content: flex-start;
+          position: absolute;
+          width: 70%;
+          left: 15%;
+          top: 380px;
+        }
+
+
+
+        .toppart-span {
+          color: #ffffff;
+          font: 500 18px "Rubik", sans-serif;
 
         }
 
-</style>
+        .toppart-span2 {
+          color: #bee497;
+          font: 500 18px "Rubik", sans-serif;
+        }
+
+        .general2 {
+          flex-shrink: 0;
+          width: 100%;
+          height: 40px;
+          position: relative;
+        }
+
+        .general3 {
+          font: 700 30px "Rubik", sans-serif;
+          height: 25px;
+        }
+
+        .email {
+          flex-shrink: 0;
+          width: 100%;
+          height: 63px;
+          position: relative;
+        }
+
+        .zeta-pi-email-zetapi-info-umich-edu {
+          text-align: left;
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          width: 100%;
+          height: 4.64px;
+        }
+
+        .zeta-pi-email-zetapi-info-umich-edu-span {
+          color: #09211d;
+          font: 500 20px "Rubik", sans-serif;
+        }
+
+        .zeta-pi-email-zetapi-info-umich-edu-span2 {
+          color: #2a6133;
+          font: 500 16px "Rubik", sans-serif;
+        }
+
+        .social-media {
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 0px;
+          align-items: flex-start;
+          justify-content: flex-start;
+          flex-shrink: 0;
+          width: 100%;
+          height: 140px;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .social-media2 {
+          font: 700 25px "Rubik", sans-serif;
+          height: 40px;
+        }
+
+        .social-media3 {
+          height: 80px;
+          position: absolute;
+          top: 85px;
+        }
+
+        .e-board {
+          color: #09211d;
+          text-align: left;
+          font: 700 25px "Rubik", sans-serif;
+          text-decoration: underline;
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          width: 100%;
+          height: 60px;
+        }
+
+        .property-1-names-list {
+          flex-shrink: 0;
+          width: 100%;
+          height: 1000px;
+          position: relative;
+        }
+
+        .names-list {
+          text-align: left;
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          width: 100%;
+          height: 855px;
+        }
+
+        .name-elm {
+          color: #09211d;
+          font: 500 20px "Rubik", sans-serif;
+        }
+
+        .email-elm {
+          color: #2a6133;
+          font: 500 16px "Rubik", sans-serif;
+        }
+
+      }
+    </style>
 
 
 </body>
+
 </html>

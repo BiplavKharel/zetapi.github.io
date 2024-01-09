@@ -11,32 +11,39 @@
   <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Rubik:400,500,400italic,700' rel='stylesheet' type='text/css'>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
-    @media (max-width: 1155px) {
-
-      /* Media query for screens smaller than 768px */
-      /* Adjust styles for mobile layout */
+    @media screen and (max-width: 1155px) {
       .nav-links {
         display: none;
-        /* Hide navigation links */
       }
 
-      .icons {
-        text-align: center;
-        /* Center social media icons */
+      .menuItem {
+        width: 250px;
+        height: 1000px;
+      }
+    }
+
+    @media screen and (min-width: 1156px) {
+      .menuToggle {
+        display: none;
       }
 
-      /* Add any additional mobile-specific styles here */
+      .checkbox {
+        display: none;
+      }
     }
   </style>
 </head>
 
 <body>
   <section class="navBar">
-    <nav>
+    <nav class="menu--right" role="navigation">
       <a href="index.html"><img class="home-page-logo" src="images/keycap-logo.png"></a>
       <div class="nav-links">
         <ul class="center-alignc">
@@ -44,10 +51,11 @@
           <li><a href="eboard.html" class="hvr-sweep-to-right">e-board</a></li>
           <li><a href="committee.html" class="hvr-sweep-to-right">committees</a></li>
           <li><a href="faq.html" class="hvr-sweep-to-right"><u>FAQ</u></a></li>
-          <li><a href="contact.html" class="hvr-sweep-to-right">contact</li>
+          <li><a href="contact.html" class="hvr-sweep-to-right">contact</a></li>
           <li><a href="rush.html" class="hvr-sweep-to-right">rush</a></li>
         </ul>
       </div>
+      <!--
       <div class="icons" id="socialMedia">
         <a href="https://www.linkedin.com/company/91309323/admin/feed/posts/" target="_blank"
           style="width:100%;height:100%;"><i class="Li fab fa-linkedin"></i></a>
@@ -55,6 +63,20 @@
             class="Li fab fa-instagram"></i></a>
         <a href="https://www.tiktok.com/@zetapiumich" target="_blank" style="width:100%;height:100%;"><i
             class="Li fab fa-tiktok"></i></a>
+      </div> -->
+      <div class="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul class="menuItem">
+          <li><a href="index.html" class="hvr-sweep-to-right">home</a></li>
+          <li><a href="eboard.html" class="hvr-sweep-to-right">e-board</a></li>
+          <li><a href="committee.html" class="hvr-sweep-to-right">committees</a></li>
+          <li><a href="faq.html" class="hvr-sweep-to-right"><u>FAQ</u></a></li>
+          <li><a href="contact.html" class="hvr-sweep-to-right">contact</a></li>
+          <li><a href="rush.html" class="hvr-sweep-to-right">rush</a></li>
+        </ul>
       </div>
     </nav>
   </section>
@@ -68,9 +90,9 @@
       <div class="question-text">
         <h3>How do I join?</h3>
         <p> We recruit new members at the beginning of fall and winter semester.
-          We require that you have atleast three semesters left at the university, 
-          otherwise everyone is welcome to apply! For rush dates and more details, 
-          see the <a href="rush.html" class="hvr-sweep-to-right">rush</a> section. 
+          We require that you have atleast three semesters left at the university,
+          otherwise everyone is welcome to apply! For rush dates and more details,
+          see the <a href="rush.html" class="hvr-sweep-to-right">rush</a> section.
         </p>
       </div>
     </section>
@@ -93,7 +115,7 @@
     <section class="question">
       <div class="question-text">
         <h3>How do I join a committee?</h3>
-        <p> Any brother can join a committee at any time during the semester! Elections 
+        <p> Any brother can join a committee at any time during the semester! Elections
           for committee heads are held every year before winter break. Unfortunately,
           pledges are not allowed to join a committee or run for a committee head
           position until they are initiated as a brother.</p>

@@ -15,30 +15,59 @@
   <link href='https://fonts.googleapis.com/css?family=Rubik:400,500,400italic,700' rel='stylesheet' type='text/css'>
   <!--import font awesome icons-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @media screen and (max-width: 1155px) {
+      .nav-links {
+        display: none;
+      }
+
+      .menuItem {
+        width: 250px;
+        height: 1000px;
+      }
+    }
+
+    @media screen and (min-width: 1156px) {
+      .menuToggle {
+        display: none;
+      }
+
+      .checkbox {
+        display: none;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <section class="section1">
-    <nav style="z-index: 2;">
-      <a href="index.html"><img src="images/keycap-logo.png"></a>
-      <div class="nav-links" id="navLinks" style="z-index: 2;">
-        <ul class="center-align">
-          <li><a href="index.html"><u>home</u></a></li>
-          <li><a href="eboard.html">e-board</a></li>
-          <li><a href="committee.html">committees</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contact.html">contact</a></li>
-          <li><a href="rush.html">rush</a></li>
+  <section class="navBar">
+    <nav class="menu--right" role="navigation">
+      <a href="index.html"><img class="home-page-logo" src="images/keycap-logo.png"></a>
+      <div class="nav-links">
+        <ul class="center-alignc">
+          <li><a href="index.html" class="hvr-sweep-to-right"><u>home</u></a></li>
+          <li><a href="eboard.html" class="hvr-sweep-to-right">e-board</a></li>
+          <li><a href="committee.html" class="hvr-sweep-to-right">committees</a></li>
+          <li><a href="faq.html" class="hvr-sweep-to-right">FAQ</a></li>
+          <li><a href="contact.html" class="hvr-sweep-to-right">contact</a></li>
+          <li><a href="rush.html" class="hvr-sweep-to-right">rush</a></li>
         </ul>
       </div>
-      <div class="icons" id="socialMedia">
-        <a href="https://www.linkedin.com/company/91309323/admin/feed/posts/" target="_blank"
-          style="width:100%;height:100%;"><i class="Li fab fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/zetapi.umich/" target="_blank" style="width:100%;height:100%;"><i
-            class="Li fab fa-instagram"></i></a>
-        <a href="https://www.tiktok.com/@zetapiumich" target="_blank" style="width:100%;height:100%;"><i
-            class="Li fab fa-tiktok"></i></a>
+      <div class="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul class="menuItem">
+          <li><a href="index.html" class="hvr-sweep-to-right"><u>home</u></a></li>
+          <li><a href="eboard.html" class="hvr-sweep-to-right">e-board</a></li>
+          <li><a href="committee.html" class="hvr-sweep-to-right">committees</a></li>
+          <li><a href="faq.html" class="hvr-sweep-to-right">FAQ</a></li>
+          <li><a href="contact.html" class="hvr-sweep-to-right">contact</a></li>
+          <li><a href="rush.html" class="hvr-sweep-to-right">rush</a></li>
+        </ul>
       </div>
+
     </nav>
     <style>
       @media (max-width: 1200px) {}
@@ -96,6 +125,12 @@
             display: none;
           }
 
+          .btn-container {
+            width: 100%;
+            height: 100px;
+
+          }
+
           .top-container {
             grid-template-columns: 1fr;
           }
@@ -127,6 +162,7 @@
 
           .btn-container {
             width: 100%;
+            height: 100px;
             justify-content: center;
             display: flex;
           }
@@ -211,7 +247,7 @@
       </div>
       <div class="column-container">
         <p class="class-columns">
-            Aarushi Shah<br>
+          Aarushi Shah<br>
           Adarsh Pettappa<br>
           Aaron Schwarz<br>
           Aleen El-Hindi<br>
@@ -237,58 +273,58 @@
           Emma Cho
         </p>
         <p class="class-columns">
-            Eric Pengili<br>
-            Eric Yuan<br>
-            Erin Lee<br>
-            Ethan Marshall<br>
-            Ethan McKean<br>
-            Galen Mui<br>
-            Gerrard Choe<br>
-            Grace Chen<br>
-            Grace Mason<br>
-            Han Zhang<br>
-            Harry Jung<br>
-            Isabella Yoon<br>
-            Jane Nguyen<br>
-            Jasmine Tedjo<br>
-            Jessica Kahn<br>
-            Joshua Wu<br>
-            Jovan Yap<br>
-            Juana Uribe<br>
-            Justin Smith<br>
-            Justin Yang<br>
-            Kaiping Lu<br>
-            Leah Salomon<br>
-            Liyufei Meng<br>
-            Mandy Chen
-          </p>
+          Eric Pengili<br>
+          Eric Yuan<br>
+          Erin Lee<br>
+          Ethan Marshall<br>
+          Ethan McKean<br>
+          Galen Mui<br>
+          Gerrard Choe<br>
+          Grace Chen<br>
+          Grace Mason<br>
+          Han Zhang<br>
+          Harry Jung<br>
+          Isabella Yoon<br>
+          Jane Nguyen<br>
+          Jasmine Tedjo<br>
+          Jessica Kahn<br>
+          Joshua Wu<br>
+          Jovan Yap<br>
+          Juana Uribe<br>
+          Justin Smith<br>
+          Justin Yang<br>
+          Kaiping Lu<br>
+          Leah Salomon<br>
+          Liyufei Meng<br>
+          Mandy Chen
+        </p>
         </p>
         <p class="class-columns">
-            Maria Isho<br>
-            Marisa Kramer<br>
-            Michael Cui<br>
-            Nathan Vanderweide<br>
-            Nicholas Choi<br>
-            Nicholas Coles<br>
-            Nicholas Mathew<br>
-            Nick Lin<br>
-            Nicky Nguyen<br>
-            Rahul Giridhar<br>
-            Richard Feng<br>
-            Riya Dev<br>
-            Robert Fleur<br>
-            Samira Marquez<br>
-            Satyak khare<br>
-            Seth Hyslop<br>
-            Shriya Kethireddy<br>
-            Sunny Xu<br>
-            Tajrene Begum<br>
-            Tanya Haque<br>
-            Tia Liu<br>
-            Trisha Maturi<br>
-            Vanessa Lee<br>
-            Yukino Sakai
-          </p>
+          Maria Isho<br>
+          Marisa Kramer<br>
+          Michael Cui<br>
+          Nathan Vanderweide<br>
+          Nicholas Choi<br>
+          Nicholas Coles<br>
+          Nicholas Mathew<br>
+          Nick Lin<br>
+          Nicky Nguyen<br>
+          Rahul Giridhar<br>
+          Richard Feng<br>
+          Riya Dev<br>
+          Robert Fleur<br>
+          Samira Marquez<br>
+          Satyak khare<br>
+          Seth Hyslop<br>
+          Shriya Kethireddy<br>
+          Sunny Xu<br>
+          Tajrene Begum<br>
+          Tanya Haque<br>
+          Tia Liu<br>
+          Trisha Maturi<br>
+          Vanessa Lee<br>
+          Yukino Sakai
+        </p>
       </div>
 
     </div>

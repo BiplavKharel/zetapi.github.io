@@ -27,6 +27,10 @@
         width: 250px;
         height: 1000px;
       }
+
+      .icons {
+                display: none;
+            }
     }
 
     @media screen and (min-width: 1156px) {
@@ -37,6 +41,14 @@
       .checkbox {
         display: none;
       }
+
+      #socialMedia {
+                display: flex;
+            }
+
+            #socialMedia a {
+                flex: 1;
+            }
     }
   </style>
 </head>
@@ -55,7 +67,7 @@
           <li><a href="rush.html" class="hvr-sweep-to-right"><u>rush</u></a></li>
         </ul>
       </div>
-      <!--
+      
       <div class="icons" id="socialMedia">
         <a href="https://www.linkedin.com/company/91309323/admin/feed/posts/" target="_blank"
           style="width:100%;height:100%;"><i class="Li fab fa-linkedin"></i></a>
@@ -63,7 +75,7 @@
             class="Li fab fa-instagram"></i></a>
         <a href="https://www.tiktok.com/@zetapiumich" target="_blank" style="width:100%;height:100%;"><i
             class="Li fab fa-tiktok"></i></a>
-      </div> -->
+      </div> 
       <div class="menuToggle">
         <input type="checkbox" />
         <span></span>
@@ -82,6 +94,7 @@
   </section>
 
   <div class="page-header">
+    <span class="brr"><br></span>
     <h2>Rush</h2>
   </div>
 
@@ -241,8 +254,15 @@
             background-color: #98E44E;
             transition: 0.15s ease;
         }
+
+        .brr {
+            display: none;
+        }
         @media screen and (max-width: 500px) {
     
+          .brr {
+            display: block;
+        }
             .mail-btn {
             
             width: 125px;

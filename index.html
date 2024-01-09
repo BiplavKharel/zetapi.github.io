@@ -42,7 +42,27 @@
 <body>
   <section class="navBar">
     <nav class="menu--right" role="navigation">
-      <a href="index.html"><img class="home-page-logo" src="images/keycap-logo.png"></a>
+       <a href="index.html" id="logo-link"><img src="images/keycap-logo.png" id="keycap-logo"></a>
+      <style>
+        #keycap-logo {
+          transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        #keycap-logo.clicked {
+          transform: scale(0.95) translateY(4px);
+          opacity: 0.8;
+        }
+      </style>
+      <script>
+        document.getElementById('logo-link').addEventListener('click', function () {
+          document.getElementById('keycap-logo').classList.add('clicked');
+
+          // Reset the animation after a short delay (200ms in this example)
+          setTimeout(function () {
+            document.getElementById('keycap-logo').classList.remove('clicked');
+          }, 200);
+        });
+      </script>
       <div class="nav-links">
         <ul class="center-alignc">
           <li><a href="index.html" class="hvr-sweep-to-right"><u>home</u></a></li>
@@ -121,6 +141,20 @@
         }
 
         @media(min-width:800px) and (max-width: 1314px) {
+          .section1 {
+            height: 100%;
+            padding-bottom: 10%;
+          }
+
+          .section2 {
+            height: 100%;
+          }
+
+          .section3 {
+            height: 100%;
+            padding-bottom: 10%;
+          }
+
           .computerimg {
             display: none;
           }
@@ -141,6 +175,21 @@
         }
 
         @media(max-width: 800px) {
+          .section2 {
+            height: 100%;
+          }
+
+          .section3 {
+            height: 100%;
+            padding-bottom: 10%;
+
+          }
+
+          .section1 {
+            height: 100%;
+            padding-bottom: 10%;
+          }
+
           .computerimg {
             display: none;
           }
@@ -242,8 +291,11 @@
           Active
           Brothers<br /></div>
       </div>
-      <div>
-        <img src="./images/alpha-class-images.png" style="max-width: 100%">
+      <div style="display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;">
+        <img src="./images/alpha-class-images.png" style="max-width: 90%; align-content:center; display:flex">
       </div>
       <div class="column-container">
         <p class="class-columns">

@@ -13,41 +13,41 @@
 } */
 
 
-  .menuItem {
-    width: 250px;
-    height: 1000px;
-  }
+.menuItem {
+  width: 250px;
+  height: 1000px;
+}
 
 
-  .checkbox {
-    display: none;
-  }
+.checkbox {
+  display: none;
+}
 
-  .nav-links {
-    flex: 1;
-    text-align: right;
-    z-index: 2;
-  }
+.nav-links {
+  flex: 1;
+  text-align: right;
+  z-index: 2;
+}
 
-  .nav-links ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-  }
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
 
-  .nav-links ul li a:hover {
-    color: var(--more-neon, #B2FF63);
-  }
+.nav-links ul li a:hover {
+  color: var(--more-neon, #B2FF63);
+}
 
-  .nav-links ul li a {
-    color: #98E44E;
-    text-decoration: none;
-    font-size: 24px;
-    font-family: "Rubik", "PT Sans", Calibri, Tahoma, sans-serif;
-    font-weight: 500;
-    word-wrap: break-word;
-  }
+.nav-links ul li a {
+  color: #98E44E;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: "Rubik", "PT Sans", Calibri, Tahoma, sans-serif;
+  font-weight: 500;
+  word-wrap: break-word;
+}
 
 
 .section1 {
@@ -148,7 +148,7 @@ nav {
 /* section 3 */
 .section3 {
   width: 100%;
-  height: 879.86px;
+  /* height: 879.86px; */
   background-color: #BEE498;
 }
 

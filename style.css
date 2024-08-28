@@ -733,6 +733,13 @@ nav .fa {
     &:hover {
       color: #BEE497;
     }
+
+
+    display: inline-block;   /* Make the <a> tag behave more like a block-level element */
+    
+    padding: 0;              /* Remove any padding that might be added by the <a> tag */
+    margin: 0;      
+
   }
 
   input {

@@ -1,254 +1,266 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="with=device-width, initial-scale=1.0">
-        <title>Zeta Pi Contact</title>
-        <link rel="icon" href="./images/keycap-logo-dark.png">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Rubik:400,500,400italic,700' rel='stylesheet' type='text/css'>
-        <!--import font awesome icons-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    </head>
-<body style="background-color: #071e1a;">
+<head>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <title>Zeta Pi Rush</title>
+  <link rel="icon" href="./images/keycap-logo-dark.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Rubik:400,500,400italic,700' rel='stylesheet' type='text/css'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @media screen and (max-width: 1155px) {
+      .nav-links {
+        display: none;
+      }
+
+      .menuItem {
+        width: 250px;
+        height: 1000px;
+      }
+
+      .icons {
+                display: none;
+            }
+    }
+
+    @media screen and (min-width: 1156px) {
+      .menuToggle {
+        display: none;
+      }
+
+      .checkbox {
+        display: none;
+      }
+
+      #socialMedia {
+                display: flex;
+            }
+
+            #socialMedia a {
+                flex: 1;
+            }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="navBar">
+    <nav class="menu--right" role="navigation">
+      <a href="index.html" id="logo-link"><img src="images/keycap-logo.png" id="keycap-logo"></a>
+      <style>
+        #keycap-logo {
+          transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        #keycap-logo.clicked {
+          transform: scale(0.95) translateY(4px);
+          opacity: 0.8;
+        }
+      </style>
+      <script>
+        document.getElementById('logo-link').addEventListener('click', function () {
+          document.getElementById('keycap-logo').classList.add('clicked');
+
+          // Reset the animation after a short delay (200ms in this example)
+          setTimeout(function () {
+            document.getElementById('keycap-logo').classList.remove('clicked');
+          }, 200);
+        });
+      </script>
+      <div class="nav-links">
+        <ul class="center-alignc">
+          <li><a href="index.html" class="hvr-sweep-to-right">home</a></li>
+          <li><a href="eboard.html" class="hvr-sweep-to-right">e-board</a></li>
+          <li><a href="committee.html" class="hvr-sweep-to-right">committees</a></li>
+          <li><a href="faq.html" class="hvr-sweep-to-right">FAQ</a></li>
+          <li><a href="contact.html" class="hvr-sweep-to-right">contact</a></li>
+          <li><a href="rush.html" class="hvr-sweep-to-right"><u>rush</u></a></li>
+        </ul>
+      </div>
+      
+      <div class="icons" id="socialMedia">
+        <a href="https://www.linkedin.com/company/91309323/admin/feed/posts/" target="_blank"
+          style="width:100%;height:100%;"><i class="Li fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/zetapi.umich/" target="_blank" style="width:100%;height:100%;"><i
+            class="Li fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@zetapiumich" target="_blank" style="width:100%;height:100%;"><i
+            class="Li fab fa-tiktok"></i></a>
+      </div> 
+      <div class="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul class="menuItem">
+          <li><a href="index.html" class="hvr-sweep-to-right">home</a></li>
+          <li><a href="eboard.html" class="hvr-sweep-to-right">e-board</a></li>
+          <li><a href="committee.html" class="hvr-sweep-to-right">committees</a></li>
+          <li><a href="faq.html" class="hvr-sweep-to-right">FAQ</a></li>
+          <li><a href="contact.html" class="hvr-sweep-to-right">contact</a></li>
+          <li><a href="rush.html" class="hvr-sweep-to-right"><u>rush</u></a></li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+  <div class="page-header">
+    <span class="brr"><br></span>
+    <h2>Rush</h2>
+  </div>
+
+  <div class="rush-details">
+    <section class="rush-segment">
+
+      <span class="brr"><br></span>
+      <div class="rush-text">
+        <h3>What is "Rush"?</h3>
+        <p> Rush represents a recruitment phase within fraternities, including professional chapters. During this
+          time, the fraternity actively seeks new members and organizes events for potential recruits to gain
+          insight into the fraternity's objectives and engagements. For professional fraternities, these occasions
+          often comprise networking sessions, workshops, and social gatherings, facilitating a mutual assessment
+          of compatibility. Following the Rush period, invitations are extended to individuals whose values align
+          with those of the fraternity.
+        </p>
+      </div>
+    </section>
+
+    <section class="rush-segment">
+      <div class="rush-text">
+        <h3>Why Zeta Pi?</h3>
+        <p> Joining Zeta Pi offers a range of benefits, including networking opportunities with industry professionals
+          and peers, skill development through workshops and training, career growth with access to job placement
+          services,
+          resources, leadership experience within the fraternity, a supportive community for personal and professional
+          development, and the chance to contribute to tech-related initiatives.
+        </p>
+      </div>
+    </section>
+
+    <section class="rush-segment">
+      <div class="rush-text">
+        <h3>How to Apply</h3>
+        <p>We have applications open at the start of each semester. Unfortunately, the 
+          Winter 2024 application due date has already passed, but we will be recruiting new 
+          members again in the fall. In the mean time, please follow us on Instagram to stay updated about us! </p>
+          <span class="brr"><br></span>
+      </div>
+    </section>
+
+    
 
 
+    <style>
+        .brr {
+            display: none;
+        }
+
+        .apply-btn {
+            display: block;
+            text-decoration: none;
+            color: #2A441E;
+            background-color: #BEE498;
+            text-align: center;
+            width: 250px;
+            height: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 30px;
+            font-weight: 700;
+            font-family: Rubik;
+            word-wrap: break-word;
+            position: relative;
+            cursor: pointer;
+            border-radius: 80px;
+            border-width: 1px;
+        }
+
+        .apply-btn:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+            background-color: #98E44E;
+            transition: 0.15s ease;
+        }
+
+        .mail-btn {
+            display: block;
+            text-decoration: none;
+            color: #2A441E;
+            background-color: #BEE498;
+            text-align: center;
+            width: 250px;
+            height: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 25px;
+            font-weight: 700;
+            font-family: Rubik;
+            word-wrap: break-word;
+            position: relative;
+            cursor: pointer;
+            border-radius: 80px;
+            border-width: 1px;
+        }
+
+        .mail-btn:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+            background-color: #98E44E;
+            transition: 0.15s ease;
+        }
+
+        .brr {
+            display: none;
+        }
+        @media screen and (max-width: 500px) {
+    
+          .brr {
+            display: block;
+        }
+
+        .apply-btn {
             
-        <div class="rectangle-1"></div>
-        
+            width: 200px;
+            height: 80px;
+            font-size: 23px;
 
-
-        
-        <div class="content">
-
-
-          <div class="eboard">
-            <div class="property-1-e-board">
-              <div class="e-board">E-Board</div>
-            </div>
+        }
+            .mail-btn {
             
-          </div>
-        </div>
+            width: 125px;
+            height: 50px;
+            font-size: 13px;
 
-   
+        }
+            .brr {
+                display: block;
+            }
+            .page-header h2 {
+                font-size: 50px; 
+    
+            }
+    
+            .rush-text h3 {
 
-<style>
-                
+                font-size: 30px;
 
-.rectangle-1 {
-  background: #bee497;
-  width: 100%;
-  height: 1701px;
-  position: absolute;
-  top: 350px;
-}
-.h-1-h-2 {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  align-items: center;
-  justify-content: flex-start;
-  position: absolute;
-  left: 256px;
-  top: 50px;
-}
-.contact {
-  color: var(--more-neon, #b2ff63);
-  text-align: left;
-  font: 700 64px "Rubik", sans-serif;
-  position: relative;
-}
-.toppart {
-  text-align: left;
-  position: relative;
-  width: 100vw;
-  height: 20vw;
-}
-.toppart-span {
-  color: #ffffff;
-  font: 500 30px "Rubik", sans-serif;
-}
-.toppart-span2 {
-  color: #bee497;
-  font: 500 30px "Rubik", sans-serif;
-}
-.toppart-span3 {
-  color: #2a6133;
-  font: 500 24px "Rubik", sans-serif;
-}
-.toppart-span4 {
-  color: #09211d;
-  font: 500 28px "Rubik", sans-serif;
-}
-.content {
-  display: flex;
-  flex-direction: column;
-  gap: 23px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
+            }
+    
+            .rush-text p {
 
-  left: 25%;
-  top: 422px;
-  background: #82148d;
-}
-.general {
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
-}
-.general2 {
-  flex-shrink: 0;
-  width: 620.39px;
-  position: relative;
-}
-.general3 {
-  color: #09211d;
-  text-align: left;
-  font: 700 40px "Rubik", sans-serif;
-  text-decoration: underline;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 620.39px;
-  height: 60px;
-}
-.email {
-  flex-shrink: 0;
-  width: 742px;
-  height: 63px;
-  position: relative;
-}
-.zeta-pi-email-zetapi-info-umich-edu {
-  text-align: left;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 742px;
-  height: 4.64px;
-}
-.zeta-pi-email-zetapi-info-umich-edu-span {
-  color: #09211d;
-  font: 500 28px "Rubik", sans-serif;
-}
-.zeta-pi-email-zetapi-info-umich-edu-span2 {
-  color: #2a6133;
-  font: 500 24px "Rubik", sans-serif;
-}
-.social-media {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  height: 245px;
-  position: relative;
-  overflow: hidden;
-}
-.social-media2 {
-  color: #09211d;
-  text-align: left;
-  font: 700 40px "Rubik", sans-serif;
-  text-decoration: underline;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 620.39px;
-  height: 60px;
-}
-.social-media3 {
-  flex-shrink: 0;
-  width: 742px;
-  height: 152px;
-  position: relative;
-}
-.li {
-  width: 141px;
-  height: 141px;
-  position: absolute;
-  left: 6px;
-  top: 2px;
-}
-.insta {
-  width: 141px;
-  height: 141px;
-  position: absolute;
-  left: 182px;
-  top: 2px;
-}
-.tiktok-1 {
-  width: 141px;
-  height: 141px;
-  position: absolute;
-  left: 358px;
-  top: 2px;
-}
-.eboard {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  height: 1010px;
-  position: relative;
-  overflow: hidden;
-}
-.property-1-e-board {
-  flex-shrink: 0;
-  width: 100%;
-  height: 60px;
-  position: relative;
-  background: #49b6e8;
-}
-.e-board {
-  color: #09211d;
-  text-align: left;
-  font: 700 40px "Rubik", sans-serif;
-  text-decoration: underline;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 60px;
-  background: #dd0808;
-}
-.property-1-names-list {
-  flex-shrink: 0;
-  width: 100%;
-  height: 1000px;
-  position: relative;
-}
-.names-list {
-  text-align: left;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 855px;
-}
-.name-elm {
-  color: #09211d;
-  font: 500 28px "Rubik", sans-serif;
-}
-.email-elm {
-  color: #2a6133;
-  font: 500 24px "Rubik", sans-serif;
-}
+                font-size: 14px;
 
-</style>
+            }
 
-
+        
+        }
+    </style>
 </body>
 </html>

@@ -130,15 +130,18 @@
         </button>
       </a>-->
       <div class="button-container">
-        <button class="mail-btn1" onclick="window.open('https://forms.gle/QVwwVCSy1oUmKgWa8', '_blank');">
-          Join Mailing List
+        <button class="mail-btn1" onclick="window.open('https://forms.gle/x9d3wcZuNdJwHN6i8', '_blank');">
+          Application
         </button>
 
         <button class="mail-btn2" onclick="document.getElementById('calendar').scrollIntoView();">
           Rush Calendar
         </button>
+        
     </div>
+
      <span class="brr"><br></span>
+     
       <div class="rush-text">
         <h3>What is "Rush"?</h3>
         <p> Rush represents a recruitment phase within fraternities, including professional chapters. During this
@@ -169,12 +172,15 @@
         <p>The first step in the Rush process is the written application, which will open on September 3rd at 9 AM.
           We encourage all prospective members to attend one of our informational sessions before submitting their 
           application. The due date is 9/7 at 5 PM, and then on 9/8 we will notify you of your status as a 
-          second round applicant. In the mean time, please join our mailing list for updates! </p>
+          second round applicant. In the mean time, please <a href="https://forms.gle/QVwwVCSy1oUmKgWa8" class="hvr-sweep-to-right" style="color: var(--more-neon, #B2FF63)" target="_blank">join our mailing list</a> for updates! </p>
           <span class="brr"><br></span>
       </div>
+
+      
     </section>
 
     <section class="rush-segment">
+      
       <div class="rush-text" id="calendar">
         <h3>Fall 2024 Rush Schedule</h3>
       </div>
@@ -321,6 +327,33 @@
             transition: 0.15s ease;
         }
         
+
+        
+        .mail-btn {
+          display: block;
+          text-decoration: none;
+          color: #2A441E;
+          background-color: #BEE498;
+          text-align: center;
+          width: 250px;
+          height: 100px;
+          font-size: 25px;
+          font-weight: 700;
+          font-family: Rubik;
+          word-wrap: break-word;
+          position: absolute;
+          cursor: pointer;
+          border-radius: 80px;
+          border-width: 1px;
+          margin-bottom: 40px;
+        }
+
+        .mail-btn:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+            background-color: #98E44E;
+            transition: 0.15s ease;
+        }
+
         .brr {
             display: none;
         }

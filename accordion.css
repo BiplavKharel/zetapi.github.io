@@ -80,7 +80,7 @@ ul li i:after {
   padding: 0 50px 0 30px;
   transition: .3s opacity, .6s max-height;
   hyphens: auto;
-  z-index: 2;
+  z-index: 1;
 }
 
 #faq ul {

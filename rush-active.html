@@ -29,8 +29,8 @@
       }
 
       .icons {
-                display: none;
-            }
+        display: none;
+      }
     }
 
     @media screen and (min-width: 1156px) {
@@ -43,12 +43,12 @@
       }
 
       #socialMedia {
-                display: flex;
-            }
+        display: flex;
+      }
 
-            #socialMedia a {
-                flex: 1;
-            }
+      #socialMedia a {
+        flex: 1;
+      }
     }
   </style>
 </head>
@@ -118,14 +118,27 @@
     <h2>Rush</h2>
   </div>
 
+
+
   <div class="rush-details">
     <section class="rush-segment">
-      <a href="https://forms.gle/cmjrFaHK4AxZXKnR6">
+      
+      <!--<a href="https://forms.gle/cmjrFaHK4AxZXKnR6">
         <button class="apply-btn">
           Apply Here
         </button>
-      </a>
-      <span class="brr"><br></span>
+      </a>-->
+      <div class="button-container">
+       
+
+        <button class="mail-btn2" onclick="document.getElementById('calendar').scrollIntoView();">
+          Rush Calendar
+        </button>
+        
+    </div>
+
+     <span class="brr"><br></span>
+     
       <div class="rush-text">
         <h3>What is "Rush"?</h3>
         <p> Rush represents a recruitment phase within fraternities, including professional chapters. During this
@@ -153,42 +166,39 @@
     <section class="rush-segment">
       <div class="rush-text">
         <h3>How to Apply</h3>
-        <p>The first step in the Rush process is the written application, which is linked at the top of this page.
+        <p>The first step in the Rush process is the written application, which will open on September 3rd at 9 AM.
           We encourage all prospective members to attend one of our informational sessions before submitting their 
-          application. The due date is 1/20 at 11 AM, and then on 1/21 we will notify you of your status as a 
-          second round applicant. In the mean time, please join our mailing list for updates! </p>
-        <a href="https://forms.gle/KkWNKpne1xCk7fVD9">
-            <button class="mail-btn">
-              Join Mailing List
-            </button>
-          </a>
+          application. The due date is 9/7 at 5 PM, and then on 9/8 we will notify you of your status as a 
+          second round applicant. In the mean time, please <a href="https://forms.gle/QVwwVCSy1oUmKgWa8" class="hvr-sweep-to-right" style="color: var(--more-neon, #B2FF63)" target="_blank">join our mailing list</a> for updates! </p>
           <span class="brr"><br></span>
       </div>
+
+      
     </section>
 
-    
-
     <section class="rush-segment">
-      <div class="rush-text">
-        <h3>Winter 2024 Rush Schedule</h3>
+      
+      <div class="rush-text" id="calendar">
+        <h3>Fall 2024 Rush Schedule</h3>
       </div>
       <ul class="timeline">
         <li class="timeline-event">
-            <label class="timeline-event-icon"></label>
-            <div class="timeline-event-copy">
-              <p class="timeline-event-thumbnail">Thurs, Jan. 11</p>
-              <h2>Winterfest</h2>
-              <h4>4:00-7:00 PM <br> 2nd Floor Michigan Union </h4>
-              <p>Come see us at Winterfest at table 39! You will be able to learn more about what we 
-                do as well as meet some of our Brothers before Rush starts.
-                <br></p>
-            </div>
-          </li>
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy">
+            <p class="timeline-event-thumbnail">Wed, Aug. 28</p>
+            <h2>Festifall</h2>
+            <h4>6:00-8:30 PM <br> Central Campus Diag </h4>
+            <p>Come see us at Festifall at table F61! You will be able to learn more about what we 
+              do as well as meet some of our Brothers before Rush starts.
+              <br></p>
+          </div>
+        </li>
           <li class="timeline-event">
             <label class="timeline-event-icon"></label>
             <div class="timeline-event-copy">
-              <p class="timeline-event-thumbnail">Mon, Jan. 15th</p>
+              <p class="timeline-event-thumbnail">Tue, Sep. 3</p>
               <h2>Applications Open!</h2>
+              <h4>9 AM<br> ZetaPi.tech/rush.html </h4>
               <p>Please make sure to attend one of our info sessions before submitting your application. 
                 There will be a few short response questions, so we advise to start working on it early. 
                 When the application is released, it will be linked above on this page. Good luck!
@@ -198,9 +208,9 @@
         <li class="timeline-event">
           <label class="timeline-event-icon"></label>
           <div class="timeline-event-copy">
-            <p class="timeline-event-thumbnail">Tue, Jan. 16th</p>
+            <p class="timeline-event-thumbnail">Tue, Sep. 3</p>
             <h2>Info Session 1</h2>
-            <h4>6:30-8:30 PM <br> North University Building 1528</h4>
+            <h4>6:00-8:00 PM <br> EECS 1500</h4>
             <p>Join us at our info session to discover a vibrant
               community of tech enthusiasts dedicated to fostering innovation and collaboration. Explore the
               exciting opportunities to enhance your skills through hands-on projects, networking events, and
@@ -212,9 +222,9 @@
         <li class="timeline-event">
           <label class="timeline-event-icon"></label>
           <div class="timeline-event-copy">
-            <p class="timeline-event-thumbnail">Wed, Jan. 17th</p>
+            <p class="timeline-event-thumbnail">Wed, Sep. 4</p>
             <h2>Info Session 2</h2>
-            <h4>6:30-8:30 PM <br> North University Building 1528</h4>
+            <h4>6:00-8:00 PM <br> EECS 1500</h4>
             <p>Join us at our info session to discover a vibrant
               community of tech enthusiasts dedicated to fostering innovation and collaboration. Explore the
               exciting opportunities to enhance your skills through hands-on projects, networking events, and
@@ -226,19 +236,19 @@
         <li class="timeline-event">
           <label class="timeline-event-icon"></label>
           <div class="timeline-event-copy">
-            <p class="timeline-event-thumbnail">Thurs, Jan. 18th</p>
-            <h2>Hot Cocoa Meet and Greet</h2>
-            <h4>6:30-8:30 PM <br> Angell Hall 127</h4>
-            <p>Get ready to mingle and connect Zeta Pi brothers! Come for an evening of networking
-              and collaboration, where students in tech unite to share ideas and forge meaningful connections. Don't forget to grab a cup of free hot cocoa while you're here!</p>
+            <p class="timeline-event-thumbnail">Thurs, Sep. 5</p>
+            <h2>Lemonade Stand Meet and Greet</h2>
+            <h4>6:00-8:00 PM <br> The Cube </h4>
+            <p>Get ready to mingle and connect with Zeta Pi brothers! Come for an evening of networking
+              and collaboration, where students in tech unite to share ideas and forge meaningful connections. Don't forget to grab a cup of free lemonade while you're here!</p>
           </div>
         </li>
         <li class="timeline-event">
           <label class="timeline-event-icon"></label>
           <div class="timeline-event-copy">
-            <p class="timeline-event-thumbnail">Sat, Jan. 20th</p>
+            <p class="timeline-event-thumbnail">Sat, Sep. 7</p>
             <h2>Applications Due!</h2>
-            <h4>11:00 AM</h4>
+            <h4>5:00 PM</h4>
             <p>Make sure to submit your application before the deadline! We won't be able to accept late submissions.
             </p>
           </div>
@@ -246,7 +256,7 @@
         <li class="timeline-event">
           <label class="timeline-event-icon"></label>
           <div class="timeline-event-copy">
-            <p class="timeline-event-thumbnail">Sun, Jan. 21 - Fri, Feb. 2</p>
+            <p class="timeline-event-thumbnail">Sun, Sep. 8 - Fri, Sep. 20</p>
             <h2>Closed Rush</h2>
             <p>The rest of the rush process will be invite-only where we'll have more events to get to know you!
               There'll be 1:1 coffee chats, and both creative and technical group events.</p>
@@ -255,9 +265,91 @@
       </ul>
     </section>
 
-    
-
     <style>
+        .button-container {
+            width: 100%; 
+            flex:1;
+            flex-shrink: 0;
+            height: 152px;
+            position: relative;
+        }
+
+        .mail-btn1 {
+            display: block;
+            text-decoration: none;
+            color: #2A441E;
+            background-color: #BEE498;
+            text-align: center;
+            width: 250px;
+            height: 100px;
+            left: 20%;
+            font-size: 25px;
+            font-weight: 700;
+            font-family: Rubik;
+            word-wrap: break-word;
+            position: absolute;
+            cursor: pointer;
+            border-radius: 80px;
+            border-width: 1px;
+        }
+        
+        .mail-btn2 {
+          display: block;
+          text-decoration: none;
+          color: #2A441E;
+          background-color: #BEE498;
+          text-align: center;
+          width: 250px;
+          height: 100px;
+          font-size: 25px;
+          font-weight: 700;
+          font-family: Rubik;
+          word-wrap: break-word;
+          position: absolute;
+          cursor: pointer;
+          border-radius: 80px;
+          border-width: 1px;
+        }
+
+        .mail-btn1:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+            background-color: #98E44E;
+            transition: 0.15s ease;
+        }
+
+        .mail-btn2:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+            background-color: #98E44E;
+            transition: 0.15s ease;
+        }
+        
+
+        
+        .mail-btn {
+          display: block;
+          text-decoration: none;
+          color: #2A441E;
+          background-color: #BEE498;
+          text-align: center;
+          width: 250px;
+          height: 100px;
+          font-size: 25px;
+          font-weight: 700;
+          font-family: Rubik;
+          word-wrap: break-word;
+          position: absolute;
+          cursor: pointer;
+          border-radius: 80px;
+          border-width: 1px;
+          margin-bottom: 40px;
+        }
+
+        .mail-btn:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+            background-color: #98E44E;
+            transition: 0.15s ease;
+        }
+
         .brr {
             display: none;
         }
@@ -288,76 +380,65 @@
             transition: 0.15s ease;
         }
 
-        .mail-btn {
-            display: block;
-            text-decoration: none;
-            color: #2A441E;
-            background-color: #BEE498;
-            text-align: center;
-            width: 250px;
-            height: 100px;
-            margin-left: auto;
-            margin-right: auto;
-            font-size: 25px;
-            font-weight: 700;
-            font-family: Rubik;
-            word-wrap: break-word;
+        @media screen and (max-width: 1155px) {
+          .button-container {
+            width: 100%; 
+            height: 152px;
             position: relative;
-            cursor: pointer;
-            border-radius: 80px;
-            border-width: 1px;
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            padding-bottom: 300px;
+          }
+
+          .mail-btn1 {
+            top: 2px;
+            right: auto;
+            left: auto;
+            border: none;
+          }
+
+          .mail-btn2 {
+            top: 150px;
+            right: auto;
+            left: auto;
+            border: none; 
+          }
         }
 
-        .mail-btn:hover {
-            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-            background-color: #98E44E;
-            transition: 0.15s ease;
-        }
-
-        .brr {
-            display: none;
-        }
         @media screen and (max-width: 500px) {
-    
           .brr {
             display: block;
-        }
+          }
 
-        .apply-btn {
+          .apply-btn {
             
             width: 200px;
             height: 80px;
             font-size: 23px;
-
-        }
-            .mail-btn {
-            
+          }
+          
+          .mail-btn {
             width: 125px;
             height: 50px;
             font-size: 13px;
+          }
 
-        }
-            .brr {
-                display: block;
-            }
-            .page-header h2 {
-                font-size: 50px; 
+          .brr {
+            display: block;
+          }
+
+          .page-header h2 {
+            font-size: 50px; 
+          }
     
-            }
+          .rush-text h3 {
+            font-size: 30px;
+          }
     
-            .rush-text h3 {
-
-                font-size: 30px;
-
-            }
-    
-            .rush-text p {
-
-                font-size: 14px;
-
-            }
-
-        
+          .rush-text p {
+            font-size: 14px;
+          }
         }
     </style>
 </body>

@@ -432,7 +432,7 @@
     </div>
     <div id="faq" style="padding-bottom: 10%">
       <ul>
-        <li class=" faq-box">
+        <li class="faq-box">
           <input type="checkbox" checked>
           <!-- <i></i> -->
           <h2>How do I join?</h2>
@@ -494,17 +494,21 @@
       }
     </style>
     <script>
+      function updateBackgroundColor(checkbox) {
+        const li = checkbox.parentNode;
+        if (checkbox.checked) {
+          li.style.backgroundColor = 'rgba(95, 150, 110, 0.40)';
+        } else {
+          li.style.backgroundColor = '#071A17';
+        }
+      }
       const checkboxes = document.querySelectorAll('#faq input[type="checkbox"]');
-
       checkboxes.forEach(checkbox => {
         checkbox.addEventListener('change', () => {
-          const li = checkbox.parentNode;
-          if (!checkbox.checked) {
-            li.style.backgroundColor = '#071A17';
-          } else {
-            li.style.backgroundColor = 'rgba(95, 150, 110, 0.40)';
-          }
+          updateBackgroundColor(checkbox);
         });
+
+        updateBackgroundColor(checkbox);
       });
     </script>
     <!-- <script>

@@ -2,9 +2,14 @@
 
 This is the Zeta Pi Official Website!
 
-This website is still open to changes throughout each rush season.
-
 We started our building out website in June 2023 and deployed it by utilizing Vercel.
+
+index.html is the home page of the website.
+
+The rush-archive.html file contains code for the alternate view of the Rush tab on the website. 
+For example, during the majority of the semester rush.html will have the code to display "come back next semester"
+and rush-archive.html will have the rush calendar code, which will not be displayed on the website.
+Please retain this.
 
 Contributors:
 - [Alexandra Enders](https://github.com/endersa1)

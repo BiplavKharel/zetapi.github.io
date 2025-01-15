@@ -120,25 +120,25 @@
   <div class="rush-details">
     <section class="rush-segment">
 
-      <!--<a href="https://forms.gle/cmjrFaHK4AxZXKnR6">
-          <button class="apply-btn">
-            Apply Here
-          </button>
-        </a>-->
+
       <div class="button-container">
-
-
         <button class="mail-btn2" onclick="document.getElementById('calendar').scrollIntoView();">
           Rush Calendar
         </button>
+
+        <a href="https://forms.gle/MSm9GcNBHUW1FqNX9" target="_blank">
+          <button class="apply-btn">
+            Apply Here
+          </button>
+        </a>
 
         <a href="https://forms.gle/FKJ91aLH2y58eQMX6" target="_blank">
           <button class="apply-btn">
             Join Mailing List
           </button>
         </a>
-
       </div>
+
 
       <span class="brr"><br></span>
 
@@ -276,13 +276,72 @@
 
     <style>
       .button-container {
-        width: 100%;
-        flex: 1;
-        flex-shrink: 0;
-        height: 152px;
-        position: relative;
+        display: flex;
+        /* Enable flexbox */
+        justify-content: center;
+        /* Center buttons horizontally */
+        gap: 20px;
+        /* Add spacing between buttons */
+        margin-top: 20px;
+        /* Add space above the buttons */
       }
 
+      button {
+        width: 250px;
+        /* Button width */
+        height: 100px;
+        /* Button height */
+        font-size: 25px;
+        /* Text size */
+        text-align: center;
+        border-radius: 50px;
+        /* Rounded corners */
+        border: 2px solid #2A441E;
+        /* Border color */
+        background-color: #BEE498;
+        /* Background color */
+        color: #2A441E;
+        /* Text color */
+        cursor: pointer;
+        font-family: "Rubik", sans-serif;
+        font-weight: bold;
+        transition: 0.3s ease;
+        /* Smooth transition for hover */
+      }
+
+      button:hover {
+        background-color: #98E44E;
+        /* Hover background */
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        /* Shadow effect */
+      }
+
+      a {
+        text-decoration: none;
+        /* Remove underline from links */
+      }
+
+      /* Mobile responsiveness */
+      @media screen and (max-width: 500px) {
+        .button-container {
+          flex-direction: column;
+          /* Stack buttons vertically on smaller screens */
+          gap: 10px;
+          /* Reduce spacing */
+        }
+
+        button {
+          width: 200px;
+          /* Reduce button width */
+          height: 80px;
+          /* Reduce button height */
+          font-size: 18px;
+          /* Adjust font size */
+        }
+      }
+
+
+/* 
       .mail-btn1 {
         display: block;
         text-decoration: none;
@@ -435,7 +494,7 @@
 
         .brr {
           display: block;
-        }
+        } */
 
         .page-header h2 {
           font-size: 50px;

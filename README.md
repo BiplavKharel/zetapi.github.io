@@ -13,7 +13,7 @@ E Board images must be 303x303 pixels
 
 Contributors:
 - [Alexandra Enders](https://github.com/endersa1)
-- [Grace Chen](https://github.com/gracechen63))
+- [Grace Chen](https://github.com/gracechen63)
 - [Isabella Yoon](https://github.com/isayoon)
 - [Aarushi Shah](https://github.com/aarushis18)
 - [Nicholas Coles](https://github.com/colesnic)

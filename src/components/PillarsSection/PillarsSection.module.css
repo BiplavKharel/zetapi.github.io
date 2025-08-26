@@ -1,0 +1,65 @@
+@import url('../../styles/variables.css');
+
+.pillarsSection {
+  padding: var(--spacing-6xl) var(--spacing-xl);
+  background-color: var(--color-accent-d);
+  text-align: center;
+
+}
+
+.header {
+  font-size: 3rem;
+  font-family: var(--font-family-rubik);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-accent-medium);
+  margin-bottom: var(--spacing-4xl);
+  margin-top: -75px;
+}
+
+.pillarsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Force 4 in a row */
+  gap: var(--spacing-4xl);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pillarCard {
+  background-color: var(--color-primary-dark);
+  color: var(--color-text-light);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-xl);
+  box-shadow: 0 4px 10px var(--color-shadow-lighter);
+  transition: transform 0.2s ease;
+}
+
+
+.pillarCard:hover {
+  transform: translateY(-5px);
+}
+
+.pillarTitle {
+  font-size: 1.5rem;
+  font-family: var(--font-family-signika);
+  color: var(--color-accent-neon);
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-md);
+}
+
+.pillarDescription {
+  font-size: 1rem;
+  font-family: var(--font-family-rubik);
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .pillarsGrid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .pillarsGrid {
+    grid-template-columns: 1fr; /* 1 per row on phones */
+  }
+}

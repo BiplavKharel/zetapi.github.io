@@ -1,0 +1,274 @@
+/* src/styles/global.css */
+@import './variables.css'; /* Import your CSS variables */
+
+/* Font Imports (from your HTML) */
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+@import url('https://fonts.googleapis.com/css?family=Signika');
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,400italic,700');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen');
+/* Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+/* Bootstrap CSS */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css');
+
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Body Styles */
+body {
+  font-family: var(--font-family-rubik);
+  background-color: var(--color-primary-dark);
+  color: var(--color-text-light); /* Default text color on dark background */
+  line-height: 1.5;
+  font-size: 1em; /* Base font size */
+  font-weight: var(--font-weight-regular);
+  letter-spacing: 0.05em;
+}
+
+/* General Link Styles */
+a {
+  text-decoration: none !important;
+  color: currentColor; /* Inherit color unless specified */
+  transition: color 0.2s ease-in-out;
+}
+
+/* Heading Styles */
+h1, h2, h3, h4 {
+  margin: 0.3em 0;
+  font-family: var(--font-family-rubik); /* Default heading font */
+  color: var(--color-text-medium); /* Default heading color on light background */
+}
+
+/* Utility Classes */
+.center-alignc {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.center-alignc li {
+  margin: 0 var(--spacing-lg);
+}
+
+.no-border {
+  border: none !important;
+}
+
+/* Page Header */
+.page-header {
+  background-color: var(--color-primary-dark);
+  width: 100%;
+  height: var(--page-header-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.page-header h2 {
+  color: var(--color-accent-neon);
+  font-weight: var(--font-weight-bold);
+  font-size: 85px;
+  letter-spacing: -1.92px;
+  line-height: normal;
+  margin: 0;
+}
+
+/* Link Transition/Animation (hvr-sweep-to-right) */
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--color-accent-neon);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-sweep-to-right:hover,
+.hvr-sweep-to-right:focus,
+.hvr-sweep-to-right:active {
+  color: black !important;
+}
+
+.hvr-sweep-to-right:hover:before,
+.hvr-sweep-to-right:focus:before,
+.hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* Responsive `brr` class */
+.brr {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .brr {
+    display: block;
+  }
+
+  .page-header h2 {
+    font-size: 50px;
+  }
+}
+
+/* Image Hover Effect Styles (from style.css) */
+.img__wrap {
+  position: relative;
+  width: 100%;
+}
+
+.img__description_layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--color-accent-light);
+  color: var(--color-text-light);
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.img__wrap:hover .img__description_layer {
+  visibility: visible;
+  opacity: 0.87;
+}
+
+.img__description {
+  transition: 0.2s;
+  transform: translateY(1em);
+}
+
+.img__wrap:hover .img__description {
+  transform: translateY(0);
+}
+
+.img_desc_header {
+  width: 269px;
+  flex-shrink: 0;
+  color: var(--color-primary-dark);
+  text-align: center;
+  font-family: var(--font-family-rubik);
+  font-size: var(--spacing-xxxl);
+  font-weight: var(--font-weight-bold);
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+
+.img_desc_body {
+  color: var(--color-primary-dark);
+  font-family: var(--font-family-rubik);
+  font-size: var(--spacing-xxl);
+  font-weight: var(--font-weight-regular);
+  line-height: normal;
+  letter-spacing: -0.48px;
+  width: 269px;
+  flex-shrink: 0;
+  text-align: center;
+  padding-bottom: var(--spacing-lg);
+  padding-left: var(--spacing-lg);
+  padding-right: var(--spacing-lg);
+}
+
+/* Eboard Section common styles (from eboard.html inline and style.css) */
+.eboardHeadshot {
+  width: 80%;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  margin: auto;
+}
+
+.eboardName {
+  width: 262px;
+  height: 75px;
+  flex-shrink: 0;
+  color: var(--color-accent-light);
+  text-align: center;
+  font-family: var(--font-family-rubik);
+  font-size: var(--spacing-xxxl);
+  font-weight: var(--font-weight-medium);
+  line-height: normal;
+  letter-spacing: -0.64px;
+  padding-top: var(--spacing-xs);
+  margin: auto;
+}
+
+.long-eboardName { /* Specific to longer names if needed */
+  font-size: 28px; /* Original was 28px for this class */
+}
+
+.eboardTitle {
+  color: var(--color-accent-medium);
+  padding-top: var(--spacing-xs);
+  font-family: var(--font-family-rubik);
+  font-size: 25px; /* Original was 25px */
+  font-weight: var(--font-weight-regular);
+  line-height: normal;
+  text-align: center;
+  margin: auto;
+  width: 262px;
+  height: 50px;
+  flex-shrink: 0;
+  letter-spacing: -0.5px;
+}
+
+@media screen and (max-width: 576px) {
+  .eboardHeadshot img {
+    width: 100%;
+    height: auto;
+  }
+  .eboardName,
+  .eboardTitle {
+    font-size: 16px;
+    text-align: center;
+  }
+  .card-body { /* Assuming Bootstrap card-body */
+    padding: 10px;
+  }
+}
+
+/* TODO: remove this when contact form is properly implemented */
+#contact404 {
+  text-align: center;
+  font-size: xx-large;
+  color: var(--color-accent-medium);
+}
+/* *********************************************************** */

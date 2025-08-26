@@ -1,0 +1,54 @@
+@import url('../../styles/variables.css');
+
+.carouselSection {
+    background-color: var(--color-accent-d);
+    padding: var(--spacing-xl) var(--spacing-xl) var(--spacing-6xl);
+    overflow: hidden;
+    text-align: center;
+}
+
+.header {
+    font-size: 2rem;
+    font-family: var(--font-family-rubik);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-accent-medium);
+    margin-bottom: var(--spacing-4xl);
+    margin-top: var(--spacing-3xl);
+}
+
+.carouselWrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carouselTrack {
+    display: flex;
+    width: max-content;
+    animation: scrollLeft 80s linear infinite;
+}
+
+.carouselItem {
+    flex: 0 0 auto;
+    width: 260px;
+    height: 180px;
+    margin-right: 12px;
+    background: var(--color-primary-dark);
+    overflow: hidden;
+    box-shadow: 0 4px 10px var(--color-shadow-lighter);
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

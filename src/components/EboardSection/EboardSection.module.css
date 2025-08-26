@@ -1,0 +1,48 @@
+@import url('../../styles/variables.css');
+
+.gridWrapper {
+  padding: var(--spacing-5xl) var(--spacing-xl);
+  margin: 0 auto;
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4xl);
+}
+
+/* Desktop default: keep manual rows (3,4,4) */
+.grid {
+  display: block;
+}
+
+.gridRow {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 48px;
+  row-gap: 64px;
+}
+
+/* Mobile: switch to a 2-column unified grid */
+@media (max-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    justify-items: center;
+  }
+  .gridRow {
+    display: contents; /* flatten rows so items flow into the 2-col grid */
+    gap: 0;
+    row-gap: 0;
+  }
+}
+
+.fadeIn {
+  animation: fadeInUp 0.4s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(12px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

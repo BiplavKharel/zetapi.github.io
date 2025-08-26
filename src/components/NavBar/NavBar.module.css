@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+.navBar {
+  background: var(--color-primary-dark);
+  width: 100vw;
+  position: relative;
+  z-index: 2;
+}
+
+.menuRight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 6%;
+}
+
+.keycapLogo {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  width: 91.71px;
+  height: 80px;
+}
+.keycapLogo.clicked { transform: scale(0.95) translateY(4px); opacity: 0.8; }
+
+.navLinks { flex: 1; z-index: 2; }
+.navLinks ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.navLinks ul li a {
+  color: var(--color-accent-medium);
+  text-decoration: none;
+  font-size: var(--spacing-xxl);
+  font-family: var(--font-family-rubik), var(--font-family-pt-sans), var(--font-family-calibri), var(--font-family-tahoma);
+  font-weight: var(--font-weight-medium);
+  word-wrap: break-word;
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+.navLinks ul li a:hover:not(.activeLink) { color: var(--color-accent-neon); }
+.navLinks ul li a:focus,
+.navLinks ul li a:focus-visible { color: var(--color-accent-medium); outline: 2px solid transparent; }
+.navLinks ul li a.activeLink { color: var(--color-accent-medium); padding-bottom: 4px; border-bottom-color: var(--color-accent-neon); }
+.navLinks ul li a.activeLink:hover { color: var(--color-accent-medium); }
+
+.icons { display: flex; }
+.icons i { font-size: var(--spacing-xxl); color: var(--color-accent-medium); transition: color 0.3s ease; }
+.icons i:hover { color: var(--color-accent-neon); }
+.Li { color: var(--color-accent-medium); font-size: var(--spacing-xxxl); margin-right: var(--spacing-md); width: 100%; height: 100%; }
+.Li:hover { color: var(--color-accent-neon); }
+
+/* mobile hamburger (fixed, top-right) */
+.menuToggle {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0.75rem;
+  z-index: 9999;
+  -webkit-user-select: none;
+  user-select: none;
+  background: none;
+  border: none;
+  padding: 0.75rem 0.5rem; /* bigger tap target */
+}
+.menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  background: var(--color-accent-neon);
+  border-radius: 3px;
+}
+
+/* slide-out mobile menu */
+.menuItem {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  padding: var(--spacing-4xl);
+  padding-top: var(--spacing-7xl); /* room for close button */
+  background: black;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translateX(100%);    /* closed by default */
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+  z-index: 1000;
+}
+/* exported class used by TSX */
+.menuItemOpen { transform: translateX(0); }
+
+.menuItem li { padding: var(--spacing-sm) 0; font-size: var(--spacing-xxl); }
+.menuItem a { color: var(--color-accent-medium); text-decoration: none; transition: color 0.25s ease; }
+.menuItem a:hover { color: var(--color-accent-neon); }
+
+/* plain text × close button */
+.menuClose {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--color-accent-medium); /* same as nav text */
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0.25rem;
+  z-index: 1001;
+}
+.menuClose:hover { color: var(--color-accent-neon); }
+
+/* responsive visibility */
+@media screen and (max-width: 1155px) {
+  .navLinks { display: none; }
+  .icons { display: none; }
+}
+@media screen and (min-width: 1156px) {
+  .menuToggle { display: none; } /* hide burger on desktop */
+  .icons { display: flex; }
+  .icons a { flex: 1; }
+}
+
+/* centered desktop nav list */
+.centerAlignC {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+.centerAlignC li { margin: 0 var(--spacing-lg); }
+.keycapLogo {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  width: 91.71px;
+  height: 80px;
+  background: url('/images/keycap-logo.png') no-repeat center center;
+  background-size: contain;
+}

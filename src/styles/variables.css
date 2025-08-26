@@ -1,0 +1,54 @@
+/* src/styles/variables.css */
+
+:root {
+  /* Colors */
+  --color-primary-dark: #09211D; /* Used for sections, navigation background */
+  --color-primary-extra-dark: #071e1a; /* Used for contactNav */
+  --color-accent-neon: #B2FF63; /* Used for hover states, headers */
+  --color-accent-light: #BEE497; /* Used for backgrounds, names */
+  --color-accent-medium: #98E44E; /* Used for links, titles */
+  --color-text-light: #FFFFFF; /* White text on dark backgrounds */
+  --color-text-dark: #09211d; /* Dark text on light backgrounds */
+  --color-text-green-link: #2A6133; /* Specific green link color */
+  --color-hover-green: #98E44E; /* General hover color */
+  --color-shadow: rgba(0, 0, 0, 0.24); /* Box shadow color */
+  --color-shadow-lighter: rgba(0, 0, 0, 0.19); /* Lighter box shadow color */
+  --color-bootstrap-blue: #0d6efd; /* Bootstrap link blue */
+
+  /* Fonts */
+  --font-family-rubik: 'Rubik', sans-serif;
+  --font-family-signika: 'Signika', sans-serif;
+  --font-family-silkscreen: 'Silkscreen', sans-serif;
+  --font-family-pt-sans: 'PT Sans', sans-serif;
+  --font-family-calibri: 'Calibri', sans-serif;
+  --font-family-tahoma: 'Tahoma', sans-serif;
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 15px;
+  --spacing-xl: 20px;
+  --spacing-xxl: 24px;
+  --spacing-xxxl: 30px;
+  --spacing-4xl: 50px;
+  --spacing-5xl: 70px;
+  --spacing-6xl: 100px;
+  --spacing-7xl: 125px;
+
+  /* Border Radii */
+  --border-radius-sm: 10px;
+  --border-radius-md: 18px;
+  --border-radius-lg: 20px;
+  --border-radius-circle: 80px; /* For buttons */
+
+  /* Component-specific dimensions (can be refined in component CSS) */
+  --navbar-height: 80px; /* Example, adjust based on your design */
+  --page-header-height: 130px;
+}

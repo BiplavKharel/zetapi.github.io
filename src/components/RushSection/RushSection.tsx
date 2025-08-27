@@ -42,6 +42,17 @@ const RushSection: React.FC = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           />
+          <div className={styles.videoCredit}>
+            Video by{' '}
+            <a
+              href="https://anshc.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.creditLink}
+            >
+              Ansh Chauhan
+            </a>
+          </div>
         </div>
       </div>
 

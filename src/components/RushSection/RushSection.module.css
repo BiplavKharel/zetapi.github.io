@@ -115,6 +115,26 @@
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
+.videoCredit {
+  margin-top: 0.75rem;
+  text-align: center;
+  font-size: 1.43rem;
+  color: var(--color-accent-light);
+  opacity: 0.9;
+}
+
+.creditLink {
+  color: var(--color-accent-medium);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.creditLink:hover {
+  color: var(--color-accent-light);
+  text-decoration: underline;
+}
+
 /* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
   .container {
@@ -171,6 +191,11 @@
   .videoFrame {
     height: 300px;
   }
+
+  .videoCredit {
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -220,5 +245,10 @@
 
   .videoFrame {
     height: 250px;
+  }
+
+  .videoCredit {
+    font-size: 1.17rem;
+    margin-top: 0.4rem;
   }
 }

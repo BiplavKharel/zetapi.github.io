@@ -1,0 +1,18 @@
+/*
+this is very ugly! someone who is better at frontend than me can help with this :)
+*/
+
+#contactForm {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 30%;
+}
+
+#formName, #formEmail {
+    width: 50%;
+}
+
+#formMessage {
+    width: 100%;
+}

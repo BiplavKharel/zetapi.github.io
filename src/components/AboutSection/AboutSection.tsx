@@ -18,7 +18,7 @@ export default function AboutSection() {
         <p className={styles.subtitle}>
           A Co-Ed Professional Technology Fraternity founded in 2023 at the University of Michigan.
         </p>
-        <a href="/rush" className={styles.heroBtn}>
+        <a href="/#/rush" className={styles.heroBtn}>
           Fall 2025 Rush
         </a>
       </div>

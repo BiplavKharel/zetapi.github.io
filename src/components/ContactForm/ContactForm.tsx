@@ -54,11 +54,11 @@ export default function ContactForm() {
     }
     return (
         <>
-            <p id="form-response" style={{whiteSpace: "pre-line"}}>{httpResponse}</p>
+            {httpResponse && <p id={styles.formResponse}>{httpResponse}</p>}
             <form id={styles.contactForm} className="form-horizontal" onSubmit={handleSubmit}>
-                <input id={styles.formName} name="name" className="form-input" placeholder="name"/>
-                <input id={styles.formEmail} name="email" className="form-input" placeholder="email"/>
-                <input id={styles.formMessage} name="message" className="form-input" placeholder="message"/>
+                <input id={styles.formName} name="name" className="form-input" placeholder="Name"/>
+                <input id={styles.formEmail} name="email" className="form-input" placeholder="Email"/>
+                <textarea id={styles.formMessage} name="message" className="form-input" placeholder="Message"></textarea>
                 <button id={styles.formSubmit} className="form-button" type="submit">Submit</button>
             </form>
         </>

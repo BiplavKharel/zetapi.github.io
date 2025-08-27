@@ -1,18 +1,124 @@
-/*
-this is very ugly! someone who is better at frontend than me can help with this :)
-*/
+@import url('../../styles/variables.css');
 
-#contactForm {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 30%;
+.contactWrapper {
+  text-align: center;
+  padding: var(--spacing-3xl) var(--spacing-xl) 150px;
+  background: var(--color-primary-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--spacing-4xl);
 }
 
-#formName, #formEmail {
-    width: 50%;
+.contactTitle {
+  margin: 0;
+  color: var(--color-accent-neon);
+  font-size: 3.5rem;
+  font-family: var(--font-family-rubik);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -1px;
+  text-transform: lowercase;
+}
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto 100px auto;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+#formName,
+#formEmail,
+#formMessage {
+  width: 100%;
+  padding: var(--spacing-lg) var(--spacing-xl);
+  border: 1.5px solid rgba(190, 228, 151, 0.25);
+  border-radius: var(--border-radius-lg);
+  font-size: 1.05rem;
+  font-family: var(--font-family-rubik);
+  background-color: rgba(9, 33, 29, 0.88);
+  color: var(--color-text-light);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+#formName::placeholder,
+#formEmail::placeholder,
+#formMessage::placeholder {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+#formName:focus,
+#formEmail:focus,
+#formMessage:focus {
+  outline: none;
+  border-color: var(--color-accent-neon);
+  box-shadow: 0 0 0 2px rgba(178, 255, 99, 0.15);
+  background-color: rgba(9, 33, 29, 0.95);
 }
 
 #formMessage {
-    width: 100%;
+  min-height: 160px;
+  resize: vertical;
+}
+
+#formSubmit {
+  padding: var(--spacing-lg) var(--spacing-4xl);
+  background: var(--color-accent-neon);
+  color: var(--color-text-dark);
+  border: none;
+  border-radius: var(--border-radius-circle);
+  font-size: 1.1rem;
+  font-weight: var(--font-weight-semibold);
+  font-family: var(--font-family-rubik);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(178, 255, 99, 0.3);
+  margin-top: var(--spacing-lg);
+}
+
+#formSubmit:hover {
+  background: var(--color-hover-green);
+  transform: translateY(-1px);
+  box-shadow: 0 5px 14px rgba(178, 255, 99, 0.35);
+}
+
+#formSubmit:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(178, 255, 99, 0.25);
+}
+
+#formResponse {
+  padding: var(--spacing-md);
+  background: rgba(190, 228, 151, 0.1);
+  color: var(--color-accent-neon);
+  border: 1px solid rgba(190, 228, 151, 0.25);
+  border-radius: var(--border-radius-md);
+  font-family: var(--font-family-rubik);
+  white-space: pre-line;
+  font-size: 0.95rem;
+  max-width: 520px;
+  margin: 0 auto var(--spacing-xl);
+}
+
+@media screen and (max-width: 768px) {
+  .contactWrapper {
+    padding: var(--spacing-2xl) var(--spacing-lg) 120px;
+    gap: var(--spacing-xl);
+  }
+
+  .contactTitle {
+    font-size: 2.4rem;
+  }
+  
+  #formSubmit {
+    padding: var(--spacing-md) var(--spacing-xxxl);
+    font-size: 1rem;
+  }
 }

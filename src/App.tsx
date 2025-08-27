@@ -8,7 +8,7 @@ import MembersPage from './pages/MembersPage';
 
 import CommitteesPage from './pages/CommitteesPage';
 // import FAQPage from './pages/FAQPage';
-// import ContactPage from './pages/ContactPage';
+import ContactPage from './pages/ContactPage';
 import RushPage from './pages/RushPage';
 
 // MUST be default import:
@@ -26,9 +26,7 @@ function App() {
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/members" element={<MembersPage />} />
                 <Route path="/committees" element={<CommitteesPage/>} />
-                <Route path="/contact" element={
-                    <div id={"contact404"}>This page is still being worked on.<br></br><br></br>You can still contact us at zetapi-info@umich.edu!</div>
-                } />
+                <Route path="/contact" element={<ContactPage />} />
                 <Route path="/rush" element={<RushPage />} />
             </Routes>
             <Footer />

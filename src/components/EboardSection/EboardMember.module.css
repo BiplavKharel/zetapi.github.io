@@ -2,7 +2,7 @@
 
 .polaroid {
   width: 100%;
-  max-width: 240px; /* cap so rows look neat on desktop */
+  max-width: 200px; /* cap so rows look neat on desktop */
   background-color: var(--color-primary-light);
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
@@ -12,6 +12,15 @@
   display: flex;
   flex-direction: column;
   transition: transform 0.2s ease;
+}
+
+/* Mobile: ensure consistent sizing */
+@media (max-width: 768px) {
+  .polaroid {
+    width: 100%;
+    max-width: 180px; /* consistent mobile size */
+    min-width: 160px; /* prevent too small cards */
+  }
 }
 
 .polaroid:hover { transform: translateY(-4px); }

@@ -18,8 +18,13 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 48px;
-  row-gap: 64px;
+  gap: 80px;
+  row-gap: 120px;
+  margin-bottom: 60px;
+}
+
+.gridRow:last-child {
+  margin-bottom: 0;
 }
 
 /* Mobile: switch to a 2-column unified grid */

@@ -35,7 +35,13 @@ const RushSection: React.FC = () => {
           </p>
         </div>
         <div className={styles.video}>
-          <div className={styles.videoPlaceholder}>Rush Video</div>
+          <iframe
+            className={styles.videoFrame}
+            src="https://www.youtube.com/embed/GAIUS_10CLU?autoplay=1&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3"
+            title="Zeta Pi Rush Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
         </div>
       </div>
 

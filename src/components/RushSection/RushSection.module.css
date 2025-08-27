@@ -43,6 +43,34 @@
   width: fit-content;
 }
 
+.buttonContainer {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.interestButton {
+  display: inline-block;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  font-family: var(--font-family-rubik);
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid var(--color-accent-light);
+  color: var(--color-accent-light);
+  text-decoration: none;
+  box-shadow: 2px 2px 0 var(--color-accent-light);
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.interestButton:hover {
+  background: var(--color-accent-light);
+  border-color: var(--color-accent-light);
+  color: var(--color-primary-dark);
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 var(--color-accent-light);
+}
+
 
 /* Intro flex section */
 .introSection {
@@ -117,6 +145,14 @@
     margin-bottom: 2rem;
   }
 
+  .buttonContainer {
+    margin-bottom: 2rem;
+  }
+
+  .interestButton {
+    font-size: 1.1rem;
+  }
+
   .introSection {
     flex-direction: column;
     gap: 2rem;
@@ -164,6 +200,10 @@
   .deadline {
     font-size: 1rem;
     padding: 0.4rem 0.8rem;
+  }
+
+  .interestButton {
+    font-size: 1rem;
   }
 
   .introSection {

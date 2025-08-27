@@ -73,8 +73,8 @@ export const members: ActiveMember[] = [
   {
     name: "Andi Xi",
     image: "/images/zp_logo.png",
-    major: "",
-    graduation: "",
+    major: "Computer Science",
+    graduation: "2028",
   },
   {
     name: "Andrew Busch",
@@ -113,7 +113,7 @@ export const members: ActiveMember[] = [
   },
   {
     name: "Anthony Nguyen",
-    image: "/images/zp_logo.png",
+    image: "/images/headshots/anthony.jpg",
     major: "Data Science",
     graduation: "2028",
     linkedin: "https://www.linkedin.com/in/anthony-nguyen-0539a4317/",
@@ -393,7 +393,7 @@ export const members: ActiveMember[] = [
   },
   {
     name: "Monica He",
-    image: "/images/zp_logo.png",
+    image: "/images/headshots/monica.jpg",
     major: "Information",
     graduation: "2026",
     linkedin: "https://www.linkedin.com/in/mnhe/",
@@ -412,6 +412,14 @@ export const members: ActiveMember[] = [
     graduation: "2026",
     linkedin: "https://www.linkedin.com/in/donatali/",
   },
+  {
+    name: "Nick Mathew",
+    image: "/images/headshots/nick_coles.jpeg",
+    major: "Computer Science",
+    graduation: "2025",
+    linkedin: "https://www.linkedin.com/in/nicknastoski/",
+  },
+
   {
     name: "Nick Nastoski",
     image: "https://media.licdn.com/dms/image/v2/D4E03AQEJBE_f0QPM7w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1715285983851?e=1758758400&v=beta&t=jviCEBWglVPAxQOSNIn4NemCRnFvl0qbu42IHbcChm8",

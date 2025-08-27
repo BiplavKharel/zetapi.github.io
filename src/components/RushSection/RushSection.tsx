@@ -8,8 +8,19 @@ const RushSection: React.FC = () => {
       <h1 className={styles.title}>RUSH</h1>
       <p className={styles.subtitle}>Join Zeta Pi this upcoming semester!</p>
       <p className={styles.deadline}>
-        Applications for Fall 2025 are due <strong>TBD</strong>
+        Applications for Fall 2025 are due <strong>September 6th</strong>
       </p>
+      
+      <div className={styles.buttonContainer}>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfOJw1evatOvA0atFeuimss5_Eo0Y3onIlyRuugPh7FHUsh3w/viewform?usp=sharing&ouid=114992048140499693699"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.interestButton}
+        >
+          Interest Form
+        </a>
+      </div>
 
       <div className={styles.introSection}>
         <div className={styles.whatIsRush}>

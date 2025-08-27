@@ -11,11 +11,11 @@ interface RushEvent {
 const events: RushEvent[] = [
   { title: "North Campus Festifall", date: "August 25", location: "The Grove", time: "5:00 – 8:00 PM" },
   { title: "Central Campus Festifall", date: "August 27", location: "Table E010", time: "7:00 – 8:30 PM" },
-  { title: "Info Session #1", date: "August 29", location: "NUB 1528", time: "6:00 – 8:00 PM" },
-  { title: "Info Session #2", date: "September 2", location: "NUB 1528", time: "6:00 – 8:00 PM" },
-  { title: "Lemonade Stand", date: "September 3", location: "TBD", time: "6:00 – 8:00 PM" },
-  { title: "DEI Panel", date: "September 4", location: "NUB 1528", time: "6:00 – 8:00 PM" },
-  { title: "Applications Due", date: "September 5", time: "11:59 PM" }
+  { title: "Info Session #1", date: "September 2", location: "NUB 1528", time: "6:00 – 8:00 PM" },
+  { title: "Info Session #2", date: "September 3", location: "NUB 1528", time: "6:00 – 8:00 PM" },
+  { title: "Lemonade Stand", date: "September 4", location: "The Cube", time: "6:00 – 8:00 PM" },
+  { title: "DEI Panel", date: "September 5", location: "NUB 1528", time: "6:00 – 8:00 PM" },
+  { title: "Applications Due", date: "September 6", time: "11:59 PM" }
 ];
 
 const RushTimeline: React.FC = () => {

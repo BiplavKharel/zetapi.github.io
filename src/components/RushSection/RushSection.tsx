@@ -8,7 +8,7 @@ const RushSection: React.FC = () => {
       <h1 className={styles.title}>RUSH</h1>
       <p className={styles.subtitle}>Join Zeta Pi this upcoming semester!</p>
       <p className={styles.deadline}>
-        Applications for Fall 2025 are due <strong>September 6th</strong>
+        Applications for Fall 2025 are due <strong>September 7th</strong>
       </p>
       
       <div className={styles.buttonContainer}>

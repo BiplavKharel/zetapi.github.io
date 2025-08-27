@@ -15,7 +15,7 @@ const events: RushEvent[] = [
   { title: "Info Session #2", date: "September 3", location: "NUB 1528", time: "6:00 – 8:00 PM" },
   { title: "Lemonade Stand", date: "September 4", location: "The Cube", time: "6:00 – 8:00 PM" },
   { title: "DEI Panel", date: "September 5", location: "NUB 1528", time: "6:00 – 8:00 PM" },
-  { title: "Applications Due", date: "September 6", time: "11:59 PM" }
+  { title: "Applications Due", date: "September 7", time: "11:59 PM" }
 ];
 
 const RushTimeline: React.FC = () => {

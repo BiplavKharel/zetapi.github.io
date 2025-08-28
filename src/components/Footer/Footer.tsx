@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
 
                 {/* All rights reserved statement */}
                 <div className={styles.bottomText}>
-                    2024 Zeta Pi | All Rights Reserved
+                    2025 Zeta Pi | All Rights Reserved
                 </div>
             </footer>
         </>

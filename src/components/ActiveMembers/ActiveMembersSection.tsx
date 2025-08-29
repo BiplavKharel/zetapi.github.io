@@ -5,7 +5,7 @@ import { members } from '../../data/members';
 const ActiveMembersSection: React.FC = () => {
     const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
         const target = e.target as HTMLImageElement;
-        target.src = '/images/zp_logo.png';
+        target.src = 'src/assets/GlobalIcons/keycap-logo.png';
         target.onerror = null;
     };
 

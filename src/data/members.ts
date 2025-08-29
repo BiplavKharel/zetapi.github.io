@@ -72,7 +72,7 @@ export const members: ActiveMember[] = [
   },
   {
     name: "Andi Xi",
-    image: "/images/zp_logo.png",
+    image: "src/assets/GlobalIcons/keycap-logo.png",
     major: "Computer Science",
     graduation: "2028",
   },
@@ -134,7 +134,7 @@ export const members: ActiveMember[] = [
   },
   {
     name: "Audrey Nguyen",
-    image: "/images/zp_logo.png",
+    image: "src/assets/GlobalIcons/keycap-logo.png",
     major: "Electrical Eng.",
     graduation: "2026",
     linkedin: "https://www.linkedin.com/in/audreynguyen491/",
@@ -225,14 +225,14 @@ export const members: ActiveMember[] = [
   },
   {
     name: "Ethan McKean",
-    image: "/images/zp_logo.png",
+    image: "src/assets/GlobalIcons/keycap-logo.png",
     major: "Computer Science",
     graduation: "2026",
     linkedin: "https://www.linkedin.com/in/ethanmckean/",
   },
   {
     name: "Ethan Castillo",
-    image: "/images/zp_logo.png",
+    image: "src/assets/GlobalIcons/keycap-logo.png",
     major: "Computer Eng.",
     graduation: "2027",
     linkedin: "https://www.linkedin.com/in/ethan-castillo-a14b032b0/",
@@ -246,7 +246,7 @@ export const members: ActiveMember[] = [
   },
   {
     name: "Galen Mui",
-    image: "/images/zp_logo.png",
+    image: "src/assets/GlobalIcons/keycap-logo.png",
     major: "Computer Eng.",
     graduation: "2027",
     linkedin: "https://www.linkedin.com/in/galen-mui-720566278/",
@@ -337,7 +337,7 @@ export const members: ActiveMember[] = [
   },
   {
     name: "Leah Salomon",
-    image: "/images/zp_logo.png",
+    image: "src/assets/GlobalIcons/keycap-logo.png",
     major: "Data Science",
     graduation: "2026",
     linkedin: "https://www.linkedin.com/in/leah-s-2a3746292/",

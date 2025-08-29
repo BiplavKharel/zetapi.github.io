@@ -137,6 +137,6 @@
   transition: transform 0.2s ease, opacity 0.2s ease;
   width: 91.71px;
   height: 80px;
-  background: url('/images/keycap-logo.png') no-repeat center center;
+  background: url('../../assets/GlobalIcons/keycap-logo.png') no-repeat center center;
   background-size: contain;
 }

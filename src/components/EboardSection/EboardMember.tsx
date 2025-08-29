@@ -12,7 +12,7 @@ type Props = {
   email?: string;
 };
 
-const FALLBACK = '/images/zp_logo.png';
+const FALLBACK = 'src/assets/GlobalIcons/keycap-logo.png';
 
 const EboardMember: React.FC<Props> = ({
                                          image,

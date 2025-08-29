@@ -1,11 +1,12 @@
 import React from 'react';
 import styles from './ActiveMembersSection.module.css';
+import DEFAULT_IMG from '../../assets/GlobalIcons/keycap-logo.png';
 import { members } from '../../data/members';
 
 const ActiveMembersSection: React.FC = () => {
     const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
         const target = e.target as HTMLImageElement;
-        target.src = 'src/assets/GlobalIcons/keycap-logo.png';
+        target.src = DEFAULT_IMG;
         target.onerror = null;
     };
 
@@ -21,7 +22,7 @@ const ActiveMembersSection: React.FC = () => {
                     >
                         <div className={styles.imageWrapper}>
                             <img
-                                src={member.image}
+                                src={member.image && member.image.trim() ? member.image : DEFAULT_IMG}
                                 alt={member.name}
                                 className={styles.image}
                                 onError={handleImageError}

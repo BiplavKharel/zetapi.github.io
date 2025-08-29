@@ -10,7 +10,7 @@ type ActiveMemberProps = {
     linkedin?: string;
 };
 
-const DEFAULT_IMG = 'src/assets/GlobalIcons/keycap-logo.png';
+import DEFAULT_IMG from '../../assets/GlobalIcons/keycap-logo.png';
 
 const ActiveMember: React.FC<ActiveMemberProps> = ({
                                                        image,

@@ -2,7 +2,7 @@
 
 .navBar {
   background: var(--color-primary-dark);
-  width: 100vw;
+  width: 100%;
   position: relative;
   z-index: 2;
 }
